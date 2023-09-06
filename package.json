@@ -1,0 +1,20 @@
+{
+  "name": "11ty-simple-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "include-media": "^2.0.0"
+  },
+  "dependencies": {
+    "eleventy-sass": "^2.2.3"
+  }
+}

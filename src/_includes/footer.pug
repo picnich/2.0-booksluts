@@ -1,0 +1,6 @@
+footer
+    ul.footer-navigation
+      for navLink in siteSettings.links 
+        - var slug = navLink.link
+          li
+            a(href=slug)= navLink.name

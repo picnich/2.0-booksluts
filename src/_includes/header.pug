@@ -1,0 +1,12 @@
+- var title = siteSettings.name || 'My website'
+
+header.site-header
+  .site-identity
+    h1
+      a(href="/")= title  
+  nav.site-navigation
+    ul.nav
+      for navLink in siteSettings.links 
+        - var slug = navLink.link
+          li
+            a(href=slug)= navLink.name

@@ -1,0 +1,18 @@
+//- doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title My Site - #{siteSettings.name}
+    link(rel="stylesheet", href="/style.css")
+    //- block scripts
+    //-   script(src='/jquery.js')
+  body
+    include header.pug 
+    
+    block content
+
+    include footer.pug 
+    
+    script(type="module", src="/index.js") 
+
