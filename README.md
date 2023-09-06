@@ -18,8 +18,8 @@
 
 ### JS
 - [x] Setup first node
-- [] Setup structure
+- [ ] Setup structure
 
 ### To Do
-- [] Import fonts
-- [] Import SEO metadata, webclip, favicon etc.
+- [ ] Import fonts
+- [ ] Import SEO metadata, webclip, favicon etc.
