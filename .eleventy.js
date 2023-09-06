@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
     // eleventyConfig.setPugOptions({ debug: true });
 
     eleventyConfig.addPassthroughCopy("./src/style.scss")
+    eleventyConfig.addPassthroughCopy("./src/assets/")
     eleventyConfig.addPassthroughCopy("./src/index.js");
 
     return {
