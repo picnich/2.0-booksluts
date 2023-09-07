@@ -1,0 +1,12 @@
+extends base.pug 
+
+block content 
+    article.main-article
+    .container.container--narrow 
+        h1.article-title= title 
+
+        figure.main-article__figure
+            img(src=image, alt=imageAlt)
+            figcaption= imageAlt
+
+        
