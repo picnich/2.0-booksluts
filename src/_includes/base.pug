@@ -8,6 +8,8 @@ html(lang="en")
     link(rel="stylesheet", href="/style.css")
     //- block scripts
     //-   script(src='/jquery.js')
+    script(type="module" src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer="true")
+
   body
     include header.pug 
     
@@ -15,5 +17,16 @@ html(lang="en")
       block content
 
     include footer.pug 
-    
+
+    script 
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+      
     script(type="module", src="/index.js") 
