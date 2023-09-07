@@ -8,8 +8,7 @@ html(lang="en")
     link(rel="stylesheet", href="/style.css")
     //- block scripts
     //-   script(src='/jquery.js')
-    //- script(type="module" src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer="true")
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    script(type="module" src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer="true")
 
   body
     include header.pug 
@@ -19,7 +18,7 @@ html(lang="en")
 
     include footer.pug 
 
-    <script>
+    script.
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {
           if (!user) {
@@ -29,6 +28,5 @@ html(lang="en")
           }
         });
       }
-    </script>
-
+    
     script(type="module", src="/index.js") 
