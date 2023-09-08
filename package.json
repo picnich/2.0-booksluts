@@ -1,13 +1,13 @@
 {
-  "name": "11ty-simple-starter",
+  "name": "booksluts-2.0",
   "version": "1.0.0",
-  "description": "",
+  "description": "Website celebrating the books we've read together. Second version, this one built using 11ty.",
   "main": "index.js",
   "scripts": {
     "dev": "eleventy --serve",
     "build": "eleventy"
   },
-  "keywords": [],
+  "keywords": ["11ty", "books", "netlify cms"],
   "author": "",
   "license": "ISC",
   "devDependencies": {

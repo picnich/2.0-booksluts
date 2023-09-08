@@ -12,10 +12,7 @@ block content
 
         p Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
 
-    //- Uncomment to have reverse sorting
-    //- - var reverse = collections.post.reverse()
-    //- for post in reverse
-    h2 Recent Articles 
-    ul 
-        for post in collections.post
-            include /blogpost_snippet.pug
+        h2 Books 
+        ul 
+            for book, index in collections.books
+                include /snippet_homepage.pug

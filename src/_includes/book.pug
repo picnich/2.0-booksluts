@@ -1,0 +1,14 @@
+extends base.pug 
+
+block content 
+    article.main-article
+        .container.container--narrow 
+            h1.article-title= bookTitle 
+
+            figure.main-article__figure
+                img(src=image, alt=imageAlt)
+                figcaption= imageAlt
+            
+            //- .post-body 
+                //- #{content}
+        

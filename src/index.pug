@@ -7,23 +7,7 @@ extends _includes/base.pug
 block content
     .main
         h1 Homepage
-        p Three ways to render PUG below
-
-        img(src="/assets/test-img.jpg", alt="Pasta").full-width-pasta
-
-
-        ul
-            each val, key in siteSettings.links   
-                li
-                    a(href=val.link) 
-                        p The value is #{val.name}
-                        p= key + ": " + val.name
-                        p #{key}: #{val.name}
-
-        h2 What is Lorem Ipsum?
-        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-        h2 Featured Articles 
+        p Lorem ipsum
         ul 
-            for post in collections.featured
-                include /blogpost_snippet.pug
+            for book, index in collections.books
+                include /snippet_homepage.pug

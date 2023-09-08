@@ -1,6 +1,6 @@
 {
-    "name": "Nich's site", 
-    "description": "Simple description of the site here. Perhaps for SEO purposes.", 
+    "name": "BookSluts", 
+    "description": "Collection of books we've read together. Started in 2020 and we're still going!", 
     "links": [
         {
             "name": "Home", 
@@ -15,8 +15,8 @@
             "link": "/pages/contact"
         },
         {
-            "name": "Blog", 
-            "link": "/pages/blog"
+            "name": "Books", 
+            "link": "/pages/books"
         }
     ]
 }

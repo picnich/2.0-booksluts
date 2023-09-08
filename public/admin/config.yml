@@ -1,23 +1,49 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "public/assets/blog"
-public_folder: "/assets/blog" 
+media_folder: "public/assets/books"
+public_folder: "/assets/books" 
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "src/blog" # The path to the folder where the documents are stored
+  - name: "book" # Used in routes, e.g., /admin/collections/blog
+    label: "Book" # Used in the UI
+    folder: "src/books" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       # - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Title", name: "bookTitle", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
       - {label: "Author", name: "author", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Book Number", name: "bookNumber", widget: "string"}
+      - {label: "Read Date", name: "date", widget: "datetime"}
       - {label: "Date Alt", name: "altDate", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "list", default: ["post"]}
-      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Rating", name: "rating", widget: "number"}
+      - {label: "Book Cover Image", name: "coverImage", widget: "image"}
       - {label: "Image Caption", name: "imageAlt", widget: "string"}
-      # - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["book"]}
+      - {label: "Book Slut - Name", name: "bookslut", widget: "string"}
+      - {label: "Book Slut - Image", name: "bookslutImage", widget: "image"}
+      
+      - {label: "Book Summary", name: "summary", widget: "list", fields: {
+        label: "Paragraph", name: "paragraph", widget: "string"
+      }}
+      - {label: "Highlights", name: "highlights", widget: "list", fields: {
+        label: "Highlight", name: "highlight", widget: "string"
+      }}
+      - {label: "Colour - Primary", name: "colourPrimary", widget: "color"}
+      - {label: "Colour - Secondary", name: "colourSecondary", widget: "color"}
+      - {label: "Behind the Scenes Image", name: "btsImage", widget: "image"}
+      
+      # - {label: "Next Book's Title", name: "nextBookName", widget: "string"}
+      # - {label: "Next Book's Slug", name: "nextBookSlug", widget: "string"}
+      # - {label: "Next Book's Cover Image", name: "nextBookCover", widget: "image"}
+
+      - label: "Next Book"
+        name: "nextBook"
+        widget: "object"
+        collapsed: true
+        fields: 
+          - {label: "Name", name: "nextBookName", widget: "string"}
+          - {label: "Slug", name: "nextBookSlug", widget: "string"}
+          - {label: "Cover Image", name: "nextBookCover", widget: "image"}
+          - {label: "Colour", name: "nextBookColour", widget: "color"}
