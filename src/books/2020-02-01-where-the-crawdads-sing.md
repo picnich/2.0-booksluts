@@ -3,14 +3,14 @@ bookTitle: Where the Crawdads Sing
 slug: where-the-crawdads-sing
 author: Delia Owens
 bookNumber: '01'
-date: 2023-09-01
-altDate: February 2020
+dateRead: 2023-09-01
+dateReadAlt: February 2020
 rating: 4.5
 coverImage: '/assets/blog/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
 coverImageAlt: Where the Crawdads Sing Book Cover
 tags: ['book', 'nich']
 
-bookslut: Nich P.
+bookslutName: Nich P.
 bookslutImage: '/assets/blog/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
 
 summary: ["For years, rumors of the “Marsh Girl” haunted Barkley Cove, a quiet fishing village. Kya Clark is barefoot and wild; unfit for polite society. So in late 1969, when the popular Chase Andrews is found dead, locals immediately suspect her.",
