@@ -15,7 +15,7 @@ collections:
         widget: "object"
         collapsed: true
         fields: 
-          - {label: "Title", name: "bookTitle", widget: "string"}
+          - {label: "Title", name: "title", widget: "string"}
           - {label: "Slug", name: "slug", widget: "string"}
           - {label: "Author", name: "author", widget: "string"}
           - {label: "Book Cover Image", name: "coverImage", widget: "image"}
