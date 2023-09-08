@@ -35,6 +35,8 @@ collections:
       - {label: "Selected By, Image", name: "bookslutImage", widget: "image"}
       - {label: "Colour - Primary", name: "colourPrimary", widget: "color"}
       - {label: "Colour - Secondary", name: "colourSecondary", widget: "color"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["post"]}
+
 
       # - label: "Book Content"
       #   name: "bookContent"
