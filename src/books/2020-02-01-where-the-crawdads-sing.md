@@ -6,12 +6,12 @@ bookNumber: '01'
 dateRead: 2023-09-01
 dateReadAlt: February 2020
 rating: 4.5
-coverImage: '/assets/blog/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
+coverImage: '/assets/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
 coverImageAlt: Where the Crawdads Sing Book Cover
 tags: ['book', 'nich']
 
 bookslutName: Nich P.
-bookslutImage: '/assets/blog/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
+bookslutImage: '/assets/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
 
 summary: ["For years, rumors of the “Marsh Girl” haunted Barkley Cove, a quiet fishing village. Kya Clark is barefoot and wild; unfit for polite society. So in late 1969, when the popular Chase Andrews is found dead, locals immediately suspect her.",
 "But Kya is not what they say. A born naturalist with just one day of school, she takes life's lessons from the land, learning the real ways of the world from the dishonest signals of fireflies. But while she has the skills to live in solitude forever, the time comes when she yearns to be touched and loved. Drawn to two young men from town, who are each intrigued by her wild beauty, Kya opens herself to a new and startling world–until the unthinkable happens.",    
@@ -27,10 +27,14 @@ highlights: [
 
 colourPrimary: '#87831b'
 colourSecondary: '#87831b'
-btsImage: '/assets/blog/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
+btsImage: '/assets/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
 
 nextBookName: Normal People
 nextBookSlug: normal-people
-nextBookCover: '/assets/blog/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
+nextBookCover: '/assets/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
 nextBookColour: '#87831b'
 ---
+
+
+
+# I wonder if its because theres no books post? 

@@ -5,9 +5,38 @@ block content
         .container.container--narrow 
             h1.article-title= bookTitle 
 
-            figure.main-article__figure
-                img(src=image, alt=imageAlt)
-                figcaption= imageAlt
+            //- figure.main-article__figure
+                img(src=coverImage, alt=coverImageAlt)
+                figcaption= coverImageAlt 
+
+            p= slug
+            p= author
+            p= bookNumber
+            p= dateRead
+            p= dateReadAlt
+            p= rating
+            p= tags
+            p= bookslutName
+            
+            hr
+            //- p= summary
+            ul 
+                for item in summary
+                    li= item
+            hr
+            
+            //- p= highlights
+            ul 
+                for item in highlights
+                    li= item
+            hr
+            
+            p= colourPrimary
+            p= colourSecondary
+            
+            p= nextBookName
+            p= nextBookSlug
+            p= nextBookColour
             
             //- .post-body 
                 //- #{content}

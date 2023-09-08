@@ -27,13 +27,13 @@ collections:
         collapsed: true
         fields: 
           - {label: "Book Number", name: "bookNumber", widget: "string"}
-          - {label: "Rating", name: "rating", widget: "number"}
+          - {label: "Rating", name: "rating", widget: "number", min: "0", max: "5"}
           - {label: "Date Read", name: "dateRead", widget: "date"}
           - {label: "Date Read Alt", name: "dateReadAlt", widget: "string"}
           - {label: "Selected By", name: "bookslutName", widget: "string"}
           - {label: "Selected By, Image", name: "bookslutImage", widget: "image"}
-          - {label: "Colour - Primary", name: "colourPrimary", widget: "color", enableAlpha: true, allowInput: true}
-          - {label: "Colour - Secondary", name: "colourSecondary", widget: "color", enableAlpha: true, allowInput: true}
+          - {label: "Colour - Primary", name: "colourPrimary", widget: "color"}
+          - {label: "Colour - Secondary", name: "colourSecondary", widget: "color"}
 
       - label: "Book Content"
         name: "bookContent"
@@ -57,4 +57,4 @@ collections:
           - {label: "Name", name: "nextBookName", widget: "string"}
           - {label: "Slug", name: "nextBookSlug", widget: "string"}
           - {label: "Cover Image", name: "nextBookCover", widget: "image"}
-          - {label: "Colour", name: "nextBookColour", widget: "color", enableAlpha: true, allowInput: true}
+          - {label: "Background Colour", name: "nextBookColour", widget: "color"}
