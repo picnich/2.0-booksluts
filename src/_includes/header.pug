@@ -1,9 +1,9 @@
-- var title = siteSettings.name || 'My website'
+- var navTitle = siteSettings.name || 'My website'
 
 header.site-header
   .site-identity
     h1
-      a(href="/")= title  
+      a(href="/")= navTitle  
   nav.site-navigation
     ul.nav
       for navLink in siteSettings.links 

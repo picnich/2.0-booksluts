@@ -3,13 +3,14 @@ extends base.pug
 block content 
     article.main-article
         .container.container--narrow 
-            h1.article-title= bookTitle 
+            h1.article-title= title 
 
             //- figure.main-article__figure
                 img(src=coverImage, alt=coverImageAlt)
                 figcaption= coverImageAlt 
 
-            p= title
+            p Book title is #{bookTitle}
+            p= permalink
             p= slug
             p= author
             p= bookNumber
