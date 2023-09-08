@@ -1,0 +1,41 @@
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0.")
+
+    link(rel="icon", href="/assets/brand/booksluts--favicon.png", type="image/png", title="Icon")
+    
+
+    //- Primary Meta Tags -->
+    title BookSluts | #{title}
+    //- meta(content="Book Sluts | Homepage" name="title")
+    meta(content=title name="title")
+    meta(content=siteSettings.description name="description")
+    
+    //- Open Graph / Facebook -->
+    meta(content="website" property="og:type")
+    meta(content="https://booksluts.com" property="og:url")
+    meta(content="Book Sluts | Homepage" property="og:title")
+    meta(content=siteSettings.description property="og:description")
+    meta(content="/assets/brand/OG-Home.png" property="og:image")
+
+    //- Open Graph / Twitter -->
+    meta(content="summary_large_image" property="twitter:card")
+    meta(content="https://booksluts.com/" property="twitter:url")
+    meta(content="Book Sluts | Homepage" property="twitter:title")
+    meta(content=siteSettings.description property="twitter:description")
+    meta(content="/assets/brand/OG-Home.png" property="twitter:image")
+    
+    //- Styles
+    link(crossorigin="anonymous" type="font/otf" as="font" href="/assets/fonts/FormulaCondensed-Bold.otf" rel="preload")
+    link(crossorigin="anonymous" type="font/woff2" as="font" href="/assets/fonts/FormulaCondensed-Bold.woff2" rel="preload")
+    link(rel="stylesheet", href="/style.css")
+    
+    //- block scripts
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    script(src="https://www.googletagmanager.com/gtag/js?id=G-WECNERE8K8" type="module" async="")
+    script(type="module").
+      window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WECNERE8K8');

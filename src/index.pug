@@ -6,8 +6,22 @@ extends _includes/base.pug
     
 block content
     .main
-        h1 Homepage
-        p Lorem ipsum
-        ul 
-            for book, index in collections.book
-                include /snippet_homepage.pug
+        section.pageDesc
+            h1 Selected Books
+            p Books that we’ve read together
+
+        
+        .home(data-scroll-container="true")  
+            //- .content  
+            .covers
+                ul 
+                    for book in collections.book 
+                        a.cover__item-link(href=book.url)
+                            figure.cover__item
+                                .cover__item-img
+                                    .cover__item-imgInner(data-scroll-speed="-0.8" data-scroll="true"  style='background-image: url(' + book.data.aboutBook.coverImage + ');')
+                                figcaption.cover__item-caption
+                                    span.cover__item-number= book.data.bookslutsInfo.bookNumber
+                                //- img.cover__img(src="./assets/images/Book/WTCS.png", alt="Book Cover", data-flip-id="bookCover")
+                        
+        

@@ -10,17 +10,17 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      # - label: "About the Book"
-      #   name: "aboutBook"
-      #   widget: "object"
-      #   collapsed: true
-      #   fields: 
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Book Title", name: "bookTitle", widget: "string"}
-      - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "Author", name: "author", widget: "string"}
-      - {label: "Book Cover Image", name: "coverImage", widget: "image"}
-      - {label: "Book Cover Alt", name: "coverImageAlt", widget: "string"}
+      - label: "About the Book"
+        name: "aboutBook"
+        widget: "object"
+        collapsed: true
+        fields: 
+          - {label: "Title", name: "title", widget: "string"}
+          # - {label: "Book Title", name: "bookTitle", widget: "string"}
+          - {label: "Slug", name: "slug", widget: "string"}
+          - {label: "Author", name: "author", widget: "string"}
+          - {label: "Book Cover Image", name: "coverImage", widget: "image"}
+          - {label: "Book Cover Alt", name: "coverImageAlt", widget: "string"}
 
       - label: "Book Sluts Info"
         name: "bookslutsInfo"
@@ -35,18 +35,20 @@ collections:
           - {label: "Selected By, Image", name: "bookslutImage", widget: "image"}
           - {label: "Colour - Primary", name: "colourPrimary", widget: "color"}
           - {label: "Colour - Secondary", name: "colourSecondary", widget: "color"}
+          - {label: "Tags", name: "tags", widget: "list", default: ["post"]}
+
 
       - label: "Book Content"
         name: "bookContent"
         widget: "object"
         collapsed: true
         fields: 
-          # - {label: "Book Summary", name: "summary", widget: "list", fields: {
-          #   label: "Paragraph", name: "paragraph", widget: "string"
-          # }}
-          # - {label: "Highlights", name: "highlights", widget: "list", fields: {
-          #   label: "Highlight", name: "highlight", widget: "string"
-          # }}
+          - {label: "Book Summary", name: "summary", widget: "list", fields: {
+            label: "Paragraph", name: "paragraph", widget: "string"
+          }}
+          - {label: "Highlights", name: "highlights", widget: "list", fields: {
+            label: "Highlight", name: "highlight", widget: "string"
+          }}
           - {label: "Behind the Scenes Image", name: "btsImage", widget: "image"}
 
 
