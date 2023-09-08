@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title></title><link rel="stylesheet" href="/style.css"><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script></head><body><header class="site-header"><div class="site-identity"><h1><a href="/">BookSluts</a></h1></div><nav class="site-navigation"><ul class="nav"><li><a href="/">Home</a></li><li><a href="/pages/about">About</a></li><li><a href="/pages/contact">Contact</a></li><li><a href="/pages/books">Books</a></li></ul></nav></header><main> <article class="main-article"><div class="container container--narrow"> <h1 class="article-title">Where the Crawdads Sing</h1><figure class="main-article__figure"><img><figcaption></figcaption></figure></div></article></main><footer><ul class="footer-navigation"><li><a href="/">Home</a></li><li><a href="/pages/about">About</a></li><li><a href="/pages/contact">Contact</a></li><li><a href="/pages/books">Books</a></li></ul></footer><script>if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+    }
+  });
+}
+</script><script type="module" src="/index.js"> </script></body></html>
