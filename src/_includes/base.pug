@@ -2,24 +2,24 @@ doctype html
 html(lang="en")
   include head.pug
   body.loading.homepage(data-barba="wrapper")
-    include header-home.pug 
-    
-    main 
-      block content
+    div(data-barba="container", data-barba-namespace="home")
+      include header-home.pug 
+      
+      main 
+        block content
 
-      //- include prevNextPost.njk
-
-
-      //- {% assign previousPost = collections.posts | getPreviousCollectionItem: page %}
-      //- {% assign nextPost = collections.posts | getNextCollectionItem: page %}
+        //- include prevNextPost.njk
 
 
-      //- {% if nextPost %}
+        //- {% assign previousPost = collections.posts | getPreviousCollectionItem: page %}
+        //- {% assign nextPost = collections.posts | getNextCollectionItem: page %}
 
-      //- <p>Next Post is: {{ nextPost.data.aboutBook.title}}</p>
 
-      //- {% endif %}
+        //- {% if nextPost %}
 
+        //- <p>Next Post is: {{ nextPost.data.aboutBook.title}}</p>
+
+        //- {% endif %}
 
     include nav-menu.pug 
 
