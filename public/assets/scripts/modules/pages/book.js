@@ -5,10 +5,10 @@
 
 
 // import Menu from "../menu"
-import { 
-	menuOpen,
-	menuClose 
-} from "../animations/index"
+// import { 
+// 	menuOpen,
+// 	menuClose 
+// } from "../animations/index"
 class Book {
 	namespace = 'book';
 

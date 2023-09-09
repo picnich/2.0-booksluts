@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  include head.pug
+  body.loading.homepage(data-barba="wrapper")
+    include header-home.pug 
+    
+    main 
+      block content
+
+      //- include prevNextPost.njk
+
+
+      //- {% assign previousPost = collections.posts | getPreviousCollectionItem: page %}
+      //- {% assign nextPost = collections.posts | getNextCollectionItem: page %}
+
+
+      //- {% if nextPost %}
+
+      //- <p>Next Post is: {{ nextPost.data.aboutBook.title}}</p>
+
+      //- {% endif %}
+
+
+    include nav-menu.pug 
+
+    include foot.pug  

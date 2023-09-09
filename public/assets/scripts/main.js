@@ -1,4 +1,4 @@
-// import './modules/app.js'
+import './modules/app.js'
 
 function ready(fn) {
     if (document.readyState !== 'loading') {
@@ -9,7 +9,7 @@ function ready(fn) {
   }
   
   function hi() { 
-    console.log('asdfasdf')
+    console.log('From Main.js')
   }
   ready(hi)
 
