@@ -4,7 +4,7 @@ aboutBook:
     slug: normal-people
     permalink: "/{{ title | slugify }}/"
     author: Salley Rooney
-    coverImage: '/assets/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
+    coverImage: '/assets/images/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
     coverImageAlt: Normal People Book Cover
 
 bookslutsInfo:
@@ -13,7 +13,7 @@ bookslutsInfo:
     dateRead: 2020-03-01
     dateReadAlt: March 2020
     bookslutName: Bella P.
-    bookslutImage: '/assets/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
+    bookslutImage: '/assets/images/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
     colourPrimary: '#87831b'
     colourSecondary: '#b5b134'
     tags: ['book', 'bella']
@@ -28,13 +28,13 @@ bookContent:
     "Lately he’s consumed by a sense that he is in fact two separate people, and soon he will have to choose which person to be on a full-time basis, and leave the other person behind.",
     "Marianne had the sense that her real life was happening somewhere very far away, happening without her, and she didn't know if she would ever find out where it was or become part of it.",
     "It was culture as class performance, literature fetishised for its ability to take educated people on false emotional journeys, so that they might afterwards feel superior to the uneducated people whose emotional journeys they liked to read about."]
-    btsImage: '/assets/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
+    btsImage: '/assets/images/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
 
 
 nextBook:
     nextBookName: Educated
     nextBookSlug: educated
-    nextBookCover: '/assets/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
+    nextBookCover: '/assets/images/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
     nextBookColour: '#690e11'
 ---
 

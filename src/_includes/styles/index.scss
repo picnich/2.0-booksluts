@@ -1,35 +1,36 @@
-@import 'styles/utils/breakpoints';
-@import 'styles/utils/variables';
+
+@import './utils/breakpoints';
+@import './utils/variables';
 
 /**
 Base
 */
-@import 'styles/base/reset';
-@import 'styles/base/typography';
+@import './base/reset';
+@import './base/typography';
 
 
 /*
 Shared
 */
-@import 'styles/shared/links';
-@import 'styles/shared/type';
+@import './shared/links';
+@import './shared/type';
 
 /*
 General
 */
-@import 'styles/base/global';
+@import './base/global';
 
 /*
 Components
 */
-@import 'styles/components/header';
-@import 'styles/components/footer';
+@import './components/header';
+@import './components/footer';
 
 
 /*
 Pages
 */
-@import 'styles/pages/splash';
-@import 'styles/pages/home';
-@import 'styles/pages/homepage';
-@import 'styles/pages/book';
+@import './pages/splash';
+@import './pages/home';
+@import './pages/homepage';
+@import './pages/book';

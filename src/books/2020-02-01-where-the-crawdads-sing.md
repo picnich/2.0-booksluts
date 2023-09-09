@@ -4,7 +4,7 @@ aboutBook:
     slug: where-the-crawdads-sing
     permalink: "/{{ title | slugify }}/"
     author: Delia Owens
-    coverImage: '/assets/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
+    coverImage: '/assets/images/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
     coverImageAlt: Where the Crawdads Sing Book Cover
 
 bookslutsInfo:
@@ -13,7 +13,7 @@ bookslutsInfo:
     dateRead: 2020-02-01
     dateReadAlt: February 2020
     bookslutName: Nich P.
-    bookslutImage: '/assets/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
+    bookslutImage: '/assets/images/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
     colourPrimary: '#8c2204'
     colourSecondary: '#faa880'
     tags: ['book', 'nich']
@@ -30,13 +30,13 @@ bookContent:
     "Unworthy boys make a lot of noise",
     "Autumn leaves don't fall, they fly. They take their time and wander on this their only chance to soar.",
     "She laughed for his sake, something she’d never done. Giving away another piece of herself just to have someone else."]
-    btsImage: '/assets/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
+    btsImage: '/assets/images/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
 
 
 nextBook:
     nextBookName: Normal People
     nextBookSlug: normal-people
-    nextBookCover: '/assets/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
+    nextBookCover: '/assets/images/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'
     nextBookColour: '#87831b'
 ---
 
