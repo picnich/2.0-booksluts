@@ -1,38 +1,39 @@
-body {
-    background: orange;
-}
-// @import './utils/breakpoints';
-// @import './utils/variables';
 
-// /**
-// Base
-// */
-// @import './base/reset';
-// @import './base/typography';
+/**
+Utils
+*/
+@import './utils/breakpoints';
+@import './utils/variables';
 
-
-// /*
-// Shared
-// */
-// @import './shared/links';
-// @import './shared/type';
-
-// /*
-// General
-// */
-// @import './base/global';
-
-// /*
-// Components
-// */
-// @import './components/header';
-// @import './components/footer';
+/**
+Base
+*/
+@import './base/reset';
+@import './base/typography';
 
 
-// /*
-// Pages
-// */
-// @import './pages/splash';
-// @import './pages/home';
-// @import './pages/homepage';
-// @import './pages/book';
+/*
+Shared
+*/
+@import './shared/links';
+@import './shared/type';
+
+/*
+General
+*/
+@import './base/global';
+
+/*
+Components
+*/
+@import './components/header';
+@import './components/footer';
+
+
+/*
+Pages
+*/
+@import './pages/splash';
+@import './pages/home';
+@import './pages/homepage';
+@import './pages/book';
