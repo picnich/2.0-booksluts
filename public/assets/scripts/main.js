@@ -1,3 +1,5 @@
+// import './modules/app.js'
+
 function ready(fn) {
     if (document.readyState !== 'loading') {
       fn();
@@ -10,3 +12,4 @@ function ready(fn) {
     console.log('asdfasdf')
   }
   ready(hi)
+
