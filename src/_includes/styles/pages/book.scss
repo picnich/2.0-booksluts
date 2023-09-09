@@ -1,0 +1,829 @@
+.bookTemplate {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    // overflow: scroll;
+    
+    --colour-book-primary: #8C2204;
+    --colour-book-secondary: #FAA880;
+    --colour--nextBook: #87831B;
+    
+    --book-padding: 1.5rem;
+    
+    @media screen and (min-width: 768px) {
+        height: 100vh !important;
+        height: 100%;
+        flex-direction: row;
+        --book-padding: 3rem;
+    }
+    @media screen and (min-width: 1024px) {
+        --book-padding: 5rem;
+    }
+
+    &-section { 
+        width: 100%;
+        flex: 0 0 auto;
+        overflow: hidden;
+        min-height: 100vh;
+        
+        @media screen and (min-width: 768px) {
+            height: 100%;
+            max-height: 100%;
+        }
+        
+    }
+    // Section: Cover
+    .coverPage {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+        
+        @media screen and (min-width: 768px) {
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        &-col {
+            // width: 50%;
+            flex: 0 0 50%;
+            padding: var(--book-padding);
+            height: 50%;
+            
+            @media screen and (min-width: 768px) {
+                height: 100%;
+            }
+        }
+        .bookCover {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 72px;
+            padding-bottom: 72px;
+            width: 100%;
+            // background: var(--colour-book-primary);
+            position: relative;
+            // max-height: 33%;
+            
+            // @media screen and (min-width:768px) {
+            //     max-height: none;
+            // }
+
+            
+            &-img {
+                max-width: 100%;
+                z-index: 1;
+                max-height: 100%;
+                
+                @media screen and (max-width: 768px) and (orientation: portrait) {
+                    // transform: translateY(50%) scale(1.25);
+                    max-height: 66vw !important;
+                    margin: 0 auto;
+                }
+                
+                
+                @media screen and (min-width:768px) {
+                    transform: matrix(1, 0, 0, 1, 0, 0);
+                    margin: 0 auto;
+                }
+
+            }
+            .coverPage-bg {
+                background: var(--colour-book-primary);
+                position: absolute; 
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transform-origin: left;
+
+                // @media screen and (min-width:768px) {
+                //     height: 100%;
+                // }
+
+            }
+            .shadow {
+                display: none;
+                width: 70%;
+                height: 80%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                background: rgba(black, 0.2);
+                transform: translate(-50%, -50%);
+                filter: blur(50px);
+                -moz-filter: blur(50px);
+                -webkit-filter: blur(500px);
+            }
+        }
+
+        .bookDetail {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            
+            
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                justify-content: center;
+            }
+
+            // @media screen and (max-width: 768px) and (orientation: portrait) {
+            //     padding-top:0;
+            // }
+            
+            
+
+            &-title {
+                font-size: 17vw;
+                font-weight: 700;
+                line-height: 0.8;
+                font-weight: bold;
+                text-transform: uppercase;
+                hyphens: auto;
+                margin-bottom: 1rem;
+                
+                > div {
+                    overflow-y: hidden !important;
+                    padding-top: 20px;
+                }
+
+                @media screen and (min-width: 768px) {
+                    font-size: 10vw;
+                }
+                @media screen and (min-width: 1024px) {
+                    font-size: 9vw;
+                }
+
+            }
+            &-author {
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+                font-size: 1.6rem;
+                font-family: var(--font-f-serif);
+                line-height: 1;
+                > div {
+                    overflow-y: hidden !important;
+                    padding-top: 20px;
+                }
+                @media screen and (min-width: 768px) {
+                    font-size: 2rem;
+                }
+                @media screen and (min-width: 1024px) {
+                    font-size: 2.5rem;
+                }
+            }
+
+            &-recommendation {
+                position: relative;
+                text-transform: uppercase;
+                font-family: var(--font-f-sans);
+                font-size: 10px;
+                font-weight: lighter;
+                display: flex;
+                align-items: center;
+                letter-spacing: 1px;
+                margin-bottom: 2rem;
+
+                img {
+                    width: 64px;
+                    height: 64px;
+                    
+                    @media screen and (min-width: 768px) {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+                
+                .recommendedBy-bookslut {
+                    font-weight: bold;
+                    font-family: var(--font-f-condensed);
+                    text-transform: none;
+                    font-size: 2rem;
+                    letter-spacing: 0;
+                }
+
+                &:after {
+                    content: '';
+                    width: 50px;
+                    height: 50px;
+                    background: var(--colour-book-primary);
+                    border-radius: 120px;
+                    position: absolute;
+                    z-index: -1;
+                    left: 5px;
+                    // display: none;
+                    
+                    @media screen and (min-width: 768px) {
+                        width: 64px;
+                        height: 64px;
+                    }
+                
+                }
+            }
+
+            &-stats {
+                display: flex;
+                justify-content: space-between;
+
+                .bookDetail-stat--inner {
+                    overflow-y: hidden;
+                    text-transform: uppercase;
+                    font-family: var(--font-f-sans);
+                    font-size: 10px;
+                    font-weight: bold;
+                    letter-spacing: .5px;
+                    font-weight: lighter;
+                    
+                    @media screen and (min-width: 768px) {
+                        letter-spacing: 1px;
+                    }
+
+                    .bookDetail-value {
+                        font-family: var(--font-f-condensed);
+                        text-transform: none;
+                        font-size: 1.125rem;
+                        letter-spacing: 0;
+                        font-weight: bold;
+
+                        @media screen and (min-width: 768px) {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    // Section: Summary
+    .summary {
+        padding: var(--book-padding);
+        background: #1c1c1c;
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+
+        height: auto !important;
+        max-height: initial;
+
+        h2 {
+            position: absolute;
+            left: var(--book-padding);
+            bottom: var(--book-padding);
+            overflow-y: hidden;
+
+            font-size: 17vw;
+            text-transform: uppercase;
+            line-height: 1;
+
+            @media screen and (max-width: 768px) and (orientation: portrait) {
+                top: calc(var(--book-padding) + 1rem);
+                bottom: auto;
+            }
+
+            
+            @media screen and (min-width: 768px) {
+                font-size: 10vw;
+                top: auto;
+            }
+            @media screen and (min-width: 1024px) {
+                font-size: 9vw;
+            }
+            @media screen and (min-width: 1200px) {
+                font-size: 25vh;
+                bottom: 0;
+            }
+
+        }
+
+        &-textContainer {
+            columns: 1;
+            max-width: 100%;
+            
+            @media screen and (max-width: 768px) and (orientation: portrait) {
+                padding-top: 25vw;
+            }
+
+            @media screen and (min-width: 768px) {
+                columns: 2;
+            }
+            @media screen and (min-width: 1024px) {
+                max-width: 50%;
+            }
+
+            p {
+                margin-bottom: 2rem;
+                font-family: var(--font-f-sans);
+                font-display: swap;
+                font-size: 0.875rem;
+
+                @media screen and (min-width: 768px) {
+                    font-size: 0.9rem;
+                }
+
+                &:first-child::first-letter {
+                    color: var(--colour-book-secondary);
+                    font-size: 4rem;
+                    font-weight: bold;
+                    font-family: var(--font-f-condensed);
+                    font-display: swap;
+                    float: left;
+                    margin-right: .6rem;
+                    line-height: 0.7;
+                    // position: relative;
+                    // top: 15px;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+    }
+    // Section: Highlights
+    .highlights {
+        padding: var(--book-padding);
+        padding-top: 140px;
+        background: var(--color-lightgrey);
+        color: var(--color-black);
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: relative;
+        overflow: hidden;
+
+        // @media screen and (min-width: 768px) {
+            
+        // }
+
+        // h2 {
+        //     position: absolute;
+        //     left: 8rem;
+        //     top: 5rem;
+        //     font-size: 25vh;
+        //     text-transform: uppercase;
+        //     line-height: 1;
+        // }
+        h2 {
+            position: absolute;
+            overflow-y: hidden;
+            font-family: var(--font-f-serif);
+
+            left: var(--book-padding);
+            bottom: var(--book-padding);
+
+            font-size: 17vw;
+            text-transform: uppercase;
+            line-height: 1;
+
+            @media screen and (max-width: 768px) and (orientation: portrait) {
+                top: calc(var(--book-padding) + 1rem);
+                bottom: auto;
+            }
+
+            @media screen and (min-width: 768px) {
+                font-size: 10vw;
+                top: var(--book-padding);
+            }
+            @media screen and (min-width: 1024px) {
+                font-size: 9vw;
+            }
+            @media screen and (min-width: 1200px) {
+                font-size: 25vh;
+            }
+
+        }
+
+        .highlight {
+            display: grid; 
+            grid-template-columns: 1fr;
+            grid-gap: 1.5rem;
+            padding-left: 1rem;
+            
+            @media screen and (min-width: 764px) {
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 3rem 8vw;
+                
+                &.horizontal {
+                    grid-template-columns: 1fr;
+
+                    .quote {
+                        column-count: 2;
+                    }
+                }
+                
+            }
+            @media screen and (min-width: 1024px) {
+                max-width: 50%;
+                grid-gap: 2vw 8vw;
+                
+            }
+
+            &-item {
+                .quote {
+                    font-family: var(--font-f-quote);
+                    font-display: swap;
+                    font-size: 1rem;
+                    color: var(--color-black);
+                    position: relative;
+                    
+                    @media screen and (min-width: 768px) {
+                        font-size: 1.125rem;
+                    }        
+                    
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: -1rem;
+                        width: 4px;
+                        height: 100%;
+                        background: var(--colour-book-secondary);
+                        border-radius: 100px;
+                        
+                        // @media screen and (min-width: 768px) {
+                        //     width: 6px;
+                        // }        
+                    }
+                }
+                .annotation {
+                    font-weight: bold;
+                    font-size: 0.7rem;
+                    color: #BDBDBD;
+                    font-family: var(--font-f-sans);
+                    font-display: swap;
+                    margin-top: 8px;
+                }
+            }
+        }
+
+    }
+    
+    // BTS
+    .bts {
+        padding: var(--book-padding);
+        background: #221713;
+        width: auto !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-width: 100%;
+            max-height: 80%;
+            height: auto;
+        }
+    }
+
+    
+    // Section: Quotes
+    .quotes {
+        display: none !important;
+        padding: var(--book-padding);
+        background: var(--colour-book-primary);
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        overflow: hidden;
+
+        // h2 {
+        //     position: absolute;
+        //     left: 8rem;
+        //     bottom: 0;
+        //     font-size: 25vh;
+        //     text-transform: uppercase;
+        //     line-height: 1;
+        // }
+
+        h2 {
+            position: absolute;
+            left: var(--book-padding);
+            bottom: var(--book-padding);
+            overflow-y: hidden;
+
+            font-size: 17vw;
+            text-transform: uppercase;
+            line-height: 1;
+
+            @media screen and (max-width: 768px) and (orientation: portrait) {
+                top: calc(var(--book-padding) + 1rem);
+                bottom: auto;
+            }
+
+            
+            @media screen and (min-width: 768px) {
+                font-size: 10vw;
+                top: auto;
+            }
+            @media screen and (min-width: 1024px) {
+                font-size: 25vh;
+            }
+
+        }
+
+
+        .slutQuotes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+            place-self: flex-end;
+            
+            @media screen and (min-width: 768px) {
+                max-width: 80%;
+                place-self: flex-start;
+                grid-gap: 2rem 4rem;
+            }
+            
+            @media screen and (min-width: 768px) and (orientation: portrait) {
+                place-self: flex-end;
+            }
+
+            @media screen and (min-width: 1024px) {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: min-content;
+                width: 66%;
+                grid-gap: 2rem 4rem;
+                place-self: flex-start;
+            }
+
+
+            
+            &-item {
+                font-family: var(--font-f-quote);
+                font-display: swap;
+                font-size: 0.975rem;
+                position: relative;
+                text-align: center;
+                @media screen and (min-width: 768px) {
+                    font-size: 1.125rem;
+                    text-align: left;
+                }
+    
+                &:after {
+                    content: '"';
+                    position: absolute;
+                    top: 0;
+                    left: -1rem;
+                    font-family: var(--font-f-quote);
+                    font-display: swap;
+                    font-size: 4rem;
+                    line-height: 1;
+                    color: var(--colour-book-secondary);
+                    display: none;
+                    
+                    @media screen and (min-width: 768px) {
+                        display: block;
+                        left: -2rem;
+                    }
+                    
+        
+                }
+
+                .slut {
+                    display: flex;
+                    align-items: center;
+                    font-family: var(--font-f-condensed);
+                    font-display: swap;
+                    font-size: 2rem;
+                    justify-content: center;
+
+                    @media screen and (min-width: 768px) {
+                        justify-content: flex-start;
+                    }
+                    .pic {
+                        max-width: 3rem;
+                        @media screen and (min-width: 768px) {
+                            max-width: 5rem;
+                
+                        }
+                        @media screen and (min-width: 1024px) {
+            
+                        }
+            
+                    }
+                    .name {
+                        transform: translateY(20%);
+                        font-size: 1rem;
+                        
+                        @media screen and (min-width: 768px) {
+                            font-size: 1rem;
+                            max-width: 3rem;
+                            
+                        }
+                        @media screen and (min-width: 1024px) {
+                            max-width: 5rem;
+            
+                        }
+                    }
+                }
+            }
+        }    
+    }
+
+    // Section: Awards
+    .awards {
+        display: none !important;
+        padding: var(--book-padding);
+        background: var(--color-lightgrey);
+        color: var(--color-black);
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: relative;
+        overflow: hidden;
+
+        @media screen and (min-width: 768px) {
+
+        }
+
+
+        h2 {
+            position: absolute;
+            left: var(--book-padding);
+            bottom: var(--book-padding);
+            overflow-y: hidden;
+            font-family: var(--font-f-serif);
+
+            font-size: 17vw;
+            text-transform: uppercase;
+            line-height: 1;
+
+            @media screen and (max-width: 768px) and (orientation: portrait) {
+                top: calc(var(--book-padding) + 1rem);
+                bottom: auto;
+            }
+
+            @media screen and (min-width: 768px) {
+                font-size: 10vw;
+                top: var(--book-padding);
+            }
+            @media screen and (min-width: 1024px) {
+                font-size: 9vw;
+            }
+            @media screen and (min-width: 1200px) {
+                font-size: 25vh;
+            }
+        }
+
+
+
+        .awardsList {
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2vw 8vw;
+            
+            @media screen and (min-width: 768px) {
+                max-width:  80%;
+            }
+            @media screen and (min-width: 1024px) {
+                max-width:  50%;
+            }
+
+            &-item {
+                .label {
+                    font-family: var(--font-f-condensed);
+                    font-display: swap;
+                    font-size: 1.25rem;
+                    color: var(--color-black);
+                    position: relative;
+                    text-transform: uppercase;
+                }
+                .copy {
+                    font-weight: bold;
+                    font-size: 1rem;
+                    color: #BDBDBD;
+                    font-family: var(--font-f-sans);
+                    font-display: swap;
+                }
+            }
+        }
+
+    }
+
+
+    // Section: Awards
+    .nextBook {
+        padding: var(--book-padding);
+        // background: var(--colour--nextBook);
+        color: var(--color-white);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        
+        @media screen and (min-width: 768px) {
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+
+        &-bg {
+            background: var(--colour--nextBook);
+            position: absolute; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-origin: right;
+        }
+        
+        h2 {
+            position: absolute;
+            left: var(--book-padding);
+            top: calc(var(--book-padding) + 6rem);
+            font-size: 2rem;
+            font-family: var(--font-f-serif);
+            text-transform: uppercase;
+            line-height: 1;
+            overflow-y: hidden;
+
+            
+            @media screen and (min-width: 768px) {
+                font-size: 4rem;
+                left: calc(var(--book-padding) + 3rem);
+            }
+            
+        }
+
+        .next {
+            font-family: var(--font-f-condensed);
+            font-display: swap;
+            display: inline-block;
+            // font-size: 14rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 17vw;
+            line-height: 1;
+            text-decoration: none;
+            color: white;
+            overflow-y: hidden;
+
+            span {
+                overflow-y: hidden;
+                
+                > div {
+                    overflow-y: hidden;
+                    display: inline;
+                }
+            }
+
+            img {
+                // max-height: 8rem;
+                max-width: 13vw;
+                display: none;
+                
+                @media screen and (min-width: 768px) {
+                    display: inline-block;
+                    max-width: 9vh;
+                }
+                @media screen and (min-width: 1024px) {
+                    max-width: 13vh;
+                }
+            }
+            //     @media screen and (min-width: 768px) {
+            //         font-size: 10vw;
+            //     }
+            //     @media screen and (min-width: 1024px) {
+            //         font-size: 9vw;
+            //     }
+
+            @media screen and (min-width: 768px) {
+                font-size: 16vh;
+            }
+            @media screen and (min-width: 1024px) {
+                font-size: 24vh;
+            }
+        }
+
+    }
+}
+
+.has-scroll-init:not(.has-scroll-smooth) .book{
+    // background: red;
+    .bookTemplate {
+        width: 100%;
+
+        .bookTemplate-section {
+            width: 100%;
+            min-height: 100vh;
+
+            @media screen and (max-width: 768px) and (orientation: portrait) {
+                .bookCover {
+                    max-height: 50vh;
+
+                }
+                .bookCover-img {
+                    // transform: translateY(50%) scale(1.25) !important;
+                    margin: 0 auto;
+                    max-height: 66vw !important;
+                    // max-width: 32vw;
+                    // max-width: 100px;
+                    // height: auto;
+                }
+
+            }
+        }
+    }
+}

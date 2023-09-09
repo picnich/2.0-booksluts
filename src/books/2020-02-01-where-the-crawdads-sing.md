@@ -10,7 +10,7 @@ aboutBook:
 bookslutsInfo:
     bookNumber: '01'
     rating: 4.5
-    dateRead: 2023-09-01
+    dateRead: 2020-02-01
     dateReadAlt: February 2020
     bookslutName: Nich P.
     bookslutImage: '/assets/books/sincerely-media-nGrfKmtwv24-unsplash-min.jpg'

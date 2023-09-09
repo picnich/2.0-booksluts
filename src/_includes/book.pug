@@ -1,13 +1,13 @@
----
-pagination:
-  data: testdata
-  size: 1
-testdata:
- - item1
- - item2
- - item3
- - item4
----
+//- ---
+//- pagination:
+//-   data: testdata
+//-   size: 1
+//- testdata:
+//-  - item1
+//-  - item2
+//-  - item3
+//-  - item4
+//- ---
 
 extends base.pug 
 
@@ -76,23 +76,31 @@ block content
             section.bookTemplate-section.bts(data-scroll-section="true")
                 img(src=bookContent.btsImage, alt="Behind the scenes, when we were reading the book", data-scroll data-scroll-speed="1.2")
 
+    
 
         //- Next Book
         section.bookTemplate-section.nextBook(data-scroll-section="true")
-           .nextBook-bg
+            .nextBook-bg(style={'--colour--nextBook': nextBook.nextBookColour})
             h2 Next Book
             a(href="/books/"+nextBook.nextBookSlug).next
-                span= nextBook.name
-                img(src=nextBook.nextBookCover, alt=nextBook.nextBookCover + " Book Cover")
+                span= nextBook.nextBookTitle
+                img(src=nextBook.nextBookCover, alt=nextBook.nextBookTitle + " Book Cover")
 
 
-    ol
-        for item in pagination.items
-            li= item
 
-    if pagination.href.next
-        a(href=pagination.href.next) Next Page: #{pagination.page.next}
-    else 
-        a(href=pagination.href.next) First Page: #{pagination.page.first}
+
+    //- ol
+    //-     for item in pagination.items
+    //-         li= item
+
+    //- if pagination.href.next
+    //-     a(href=pagination.href.next) Next Page: #{pagination.page.next}
+    //- else 
+    //-     a(href=pagination.href.first) First Page: #{pagination.page.first}
 
         
+
+    //- {% if nextPost %}Next Blog Post: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}
+    //- if nextPost 
+    //-     p Next Book: 
+        //- a(href={nextPost.url})= nextPost.data.aboutBook.title
