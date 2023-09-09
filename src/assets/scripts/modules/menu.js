@@ -3,7 +3,7 @@ import { SplitText } from "gsap/SplitText";
 
 gsap.registerPlugin(SplitText);
 
-import { menuOpen, menuClose } from './animations'
+// import { menuOpen, menuClose } from './animations'
 
 export default class Menu {
     constructor(container) {
@@ -21,7 +21,7 @@ export default class Menu {
         this.addListeners();
     }
     animationOpen() {
-        // console.log('CLICKED THE OPEN TOGGLE')
+        console.log('CLICKED THE OPEN TOGGLE')
         // console.log('running open animation', this.isOpen, this.dom.nav)
         const tl = gsap.timeline({ defaults: { ease: 'power2.easeIn'}});
 
@@ -58,7 +58,7 @@ export default class Menu {
         this.isOpen = true;
     }
     animationClose() {
-        // console.log('running open animation', this.isOpen)
+        console.log('running close animation', this.isOpen)
         const tl = gsap.timeline({ defaults: { ease: 'power2.easeIn'}});
         // tl.set(this.dom.nav, {
         //     autoAlpha: 0
@@ -93,7 +93,7 @@ export default class Menu {
         this.isOpen = false;
     }
     addListeners() {
-        // console.log('adding listeners', this.menuOpenTrigger, this.menuCloseTrigger)
+        console.log('adding listeners', this.menuOpenTrigger, this.menuCloseTrigger)
         this.menuOpenTrigger.addEventListener('click', this.animationOpen.bind(this))
         this.menuCloseTrigger.addEventListener('click', this.animationClose.bind(this))
     }

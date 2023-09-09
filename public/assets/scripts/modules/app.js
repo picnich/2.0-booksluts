@@ -11,6 +11,8 @@ gsap.registerPlugin(Flip);
 
 console.log('App.js is loaded')
 
+import Menu from './menu'
+
 
 import { 
     fadeSlideIn,
