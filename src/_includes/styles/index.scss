@@ -6,7 +6,6 @@ Base
 */
 @import 'styles/base/reset';
 @import 'styles/base/typography';
-@import 'styles/base/global';
 
 
 /*
@@ -15,6 +14,10 @@ Shared
 @import 'styles/shared/links';
 @import 'styles/shared/type';
 
+/*
+General
+*/
+@import 'styles/base/global';
 
 /*
 Components
