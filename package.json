@@ -19,7 +19,6 @@
     "include-media": "^2.0.0"
   },
   "dependencies": {
-    "@11ty/eleventy-plugin-vite": "^4.0.0",
     "@barba/core": "^2.9.7",
     "eleventy-sass": "^2.2.3",
     "gsap": "file:gsap-bonus.tgz",
