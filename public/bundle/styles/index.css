@@ -1,4 +1,6 @@
 @charset "UTF-8";
+
+/* src/assets/styles/index.scss */
 :root {
   --color-black: #000;
   --color-grey-darker: #3e3f3f;
@@ -179,42 +181,42 @@ select {
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url(/assets/fonts/FormulaCondensed-Bold.woff2) format("woff2"), url(/assets/fonts/FormulaCondensed-Bold.otf) format("otf");
+  src: url(../FormulaCondensed-Bold-BIWHAAGD.woff2) format("woff2"), url(../FormulaCondensed-Bold-YGZYCKWD.otf) format("otf");
 }
 @font-face {
   font-family: "Formula Condensed";
   font-weight: 900;
   font-style: normal;
   font-display: swap;
-  src: url(/assets/fonts/FormulaCondensed-Black.woff2) format("woff2"), url(/assets/fonts/FormulaCondensed-Black.otf) format("otf");
+  src: url(../FormulaCondensed-Black-4DSI562W.woff2) format("woff2"), url(../FormulaCondensed-Black-XH25TNSR.otf) format("otf");
 }
 @font-face {
   font-family: "Formula Condensed";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url(/assets/fonts/FormulaCondensed-Regular.woff2) format("woff2"), url(/assets/fonts/FormulaCondensed-Regular.otf) format("otf");
+  src: url(../FormulaCondensed-Regular-H3BL65XG.woff2) format("woff2"), url(../FormulaCondensed-Regular-QOITWZRG.otf) format("otf");
 }
 @font-face {
   font-family: "Formula Condensed";
   font-weight: 200;
   font-style: normal;
   font-display: swap;
-  src: url(/assets/fonts/FormulaCondensed-Light.woff2) format("woff2"), url(/assets/fonts/FormulaCondensed-Light.otf) format("otf");
+  src: url(../FormulaCondensed-Light-JYH3XSZV.woff2) format("woff2"), url(../FormulaCondensed-Light-MJKLMYGE.otf) format("otf");
 }
 @font-face {
   font-family: "neue-haas-grotesk-text";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: url(/assets/fonts/NHaasGroteskTXPro-55Rg.woff2) format("woff2"), url(/assets/fonts/NHaasGroteskTXPro-55Rg.ttf) format("ttf");
+  src: url(../NHaasGroteskTXPro-55Rg-YOJ4CFNF.woff2) format("woff2"), url(../NHaasGroteskTXPro-55Rg-EE7YX6F3.ttf) format("ttf");
 }
 @font-face {
   font-family: "Le Murmure";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: url(/assets/fonts/Le-Murmure.woff2) format("woff2"), url(/assets/fonts/Le-Murmure.otf) format("otf");
+  src: url(../Le-Murmure-6NVNVX3L.woff2) format("woff2"), url(../Le-Murmure-KHGZNXVK.otf) format("otf");
 }
 body {
   font-family: var(--font-f-condensed);

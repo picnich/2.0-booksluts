@@ -4,8 +4,8 @@
     font-style: normal;
     font-display: swap;
     src:
-        url('/assets/fonts/FormulaCondensed-Bold.woff2') format('woff2'),
-        url('/assets/fonts/FormulaCondensed-Bold.otf') format('otf');
+        url('../../../public/assets/fonts/FormulaCondensed-Bold.woff2') format('woff2'),
+        url('../../../public/assets/fonts/FormulaCondensed-Bold.otf') format('otf');
 }
 @font-face {
     font-family: 'Formula Condensed';
@@ -13,8 +13,8 @@
     font-style: normal;
     font-display: swap;
     src:
-        url('/assets/fonts/FormulaCondensed-Black.woff2') format('woff2'),
-        url('/assets/fonts/FormulaCondensed-Black.otf') format('otf');
+        url('../../../public/assets/fonts/FormulaCondensed-Black.woff2') format('woff2'),
+        url('../../../public/assets/fonts/FormulaCondensed-Black.otf') format('otf');
 }
 @font-face {
     font-family: 'Formula Condensed';
@@ -22,8 +22,8 @@
     font-style: normal;
     font-display: swap;
     src:
-        url('/assets/fonts/FormulaCondensed-Regular.woff2') format('woff2'),
-        url('/assets/fonts/FormulaCondensed-Regular.otf') format('otf');
+        url('../../../public/assets/fonts/FormulaCondensed-Regular.woff2') format('woff2'),
+        url('../../../public/assets/fonts/FormulaCondensed-Regular.otf') format('otf');
 }
 @font-face {
     font-family: 'Formula Condensed';
@@ -31,8 +31,8 @@
     font-style: normal;
     font-display: swap;
     src:
-        url('/assets/fonts/FormulaCondensed-Light.woff2') format('woff2'),
-        url('/assets/fonts/FormulaCondensed-Light.otf') format('otf');
+        url('../../../public/assets/fonts/FormulaCondensed-Light.woff2') format('woff2'),
+        url('../../../public/assets/fonts/FormulaCondensed-Light.otf') format('otf');
 }
 @font-face {
     font-family: 'neue-haas-grotesk-text';
@@ -40,8 +40,8 @@
     font-style: normal;
     font-display: swap;
     src:
-        url('/assets/fonts/NHaasGroteskTXPro-55Rg.woff2') format('woff2'),
-        url('/assets/fonts/NHaasGroteskTXPro-55Rg.ttf') format('ttf');
+        url('../../../public/assets/fonts/NHaasGroteskTXPro-55Rg.woff2') format('woff2'),
+        url('../../../public/assets/fonts/NHaasGroteskTXPro-55Rg.ttf') format('ttf');
 }
 @font-face {
     font-family: 'Le Murmure';
@@ -49,6 +49,6 @@
     font-style: normal;
     font-display: swap;
     src:
-        url('/assets/fonts/Le-Murmure.woff2') format('woff2'),
-        url('/assets/fonts/Le-Murmure.otf') format('otf');
+        url('../../../public/assets/fonts/Le-Murmure.woff2') format('woff2'),
+        url('../../../public/assets/fonts/Le-Murmure.otf') format('otf');
 }

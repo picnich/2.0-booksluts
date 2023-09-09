@@ -10,7 +10,15 @@ Base
 */
 @import './base/reset';
 @import './base/typography';
-
+  
+// @font-face {
+//     font-family: 'Formula Condensed';
+//     font-weight: 700;
+//     font-style: normal;
+//     font-display: swap;
+//     src: local("Formula Condensed Bold"), local("FormulaCondensed-Bold"),
+//         url('../../../public/assets/fonts/FormulaCondensed-Bold.woff2') format("woff2");
+// }
 
 /*
 Shared

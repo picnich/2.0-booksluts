@@ -2,6 +2,6 @@
   "version": 3,
   "sources": ["../../../src/assets/scripts/main.js"],
   "sourcesContent": ["// import './modules/app.js'\n\nfunction ready(fn) {\n    if (document.readyState !== 'loading') {\n      fn();\n    } else {\n      document.addEventListener('DOMContentLoaded', fn);\n    }\n  }\n  \n  function hi() { \n    console.log('asdfasdf')\n  }\n  ready(hi)\n\n"],
-  "mappings": "AAEA,SAAS,MAAM,IAAI;AACf,MAAI,SAAS,eAAe,WAAW;AACrC,OAAG;AAAA,EACL,OAAO;AACL,aAAS,iBAAiB,oBAAoB,EAAE;AAAA,EAClD;AACF;AAEA,SAAS,KAAK;AACZ,UAAQ,IAAI,UAAU;AACxB;AACA,MAAM,EAAE;",
+  "mappings": ";;AAEA,WAAS,MAAM,IAAI;AACf,QAAI,SAAS,eAAe,WAAW;AACrC,SAAG;AAAA,IACL,OAAO;AACL,eAAS,iBAAiB,oBAAoB,EAAE;AAAA,IAClD;AAAA,EACF;AAEA,WAAS,KAAK;AACZ,YAAQ,IAAI,UAAU;AAAA,EACxB;AACA,QAAM,EAAE;",
   "names": []
 }

@@ -11,7 +11,9 @@ module.exports = function(eleventyConfig) {
             outdir: "public/bundle",
             // outfile: "public/bundle.js",
             minify: process.env.ELEVENTY_ENV === "production",
+            bundle: true,
             sourcemap: process.env.ELEVENTY_ENV !== "production",
+            loader: { '.woff2': 'file', '.otf': 'file', '.ttf': 'file' },
             plugins: [sassPlugin()]
         });
     });
@@ -23,7 +25,7 @@ module.exports = function(eleventyConfig) {
 
     // eleventyConfig.setPugOptions({ debug: true });
 
-    eleventyConfig.addPassthroughCopy("./src/assets/")
+    eleventyConfig.addPassthroughCopy("./src/assets")
     // eleventyConfig.addPassthroughCopy("./src/assets/styles/index.scss")
     // eleventyConfig.addPassthroughCopy("./src/assets/scripts")
     eleventyConfig.addPassthroughCopy("./src/admin");
