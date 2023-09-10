@@ -24,7 +24,7 @@
     "eleventy-sass": "^2.2.3",
     "esbuild": "^0.19.2",
     "esbuild-sass-plugin": "^2.15.0",
-    "gsap": "npm:@gsap/member@^3.12.2",
+    "gsap": "file:gsap-bonus.tgz",
     "imagesloaded": "^5.0.0",
     "locomotive-scroll": "^4.1.4"
   }
