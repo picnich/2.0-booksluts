@@ -1,7 +1,11 @@
-import { gsap } from "gsap";
-import { SplitText } from "gsap/SplitText";
+import { gsap } from "gsap/dist/gsap";
 
-gsap.registerPlugin(SplitText);
+import "splitting/dist/splitting.css";
+import "splitting/dist/splitting-cells.css";
+import Splitting from "splitting";
+// import { SplitText } from "gsap/dist/SplitText";
+
+// gsap.registerPlugin(SplitText);
 
 // import { menuOpen, menuClose } from './animations'
 
@@ -12,7 +16,9 @@ export default class Menu {
         this.dom = {
             nav: container.querySelector('.nav'),
             list: container.querySelectorAll('.bookList li'),
-            title: new SplitText(container.querySelector('.navContainer h2')),
+            // title: new SplitText(container.querySelector('.navContainer h2')),
+            title: Splitting({ target: container.querySelector('.navContainer h2'), by: 'chars'}),
+            // splitTitle: container.querySelectorAll('.navContainer h2 .char'),
             bg: container.querySelector('nav-bg')
         }
         // State
@@ -21,7 +27,7 @@ export default class Menu {
         this.addListeners();
     }
     animationOpen() {
-        console.log('CLICKED THE OPEN TOGGLE')
+        // console.log('CLICKED THE OPEN TOGGLE')
         // console.log('running open animation', this.isOpen, this.dom.nav)
         const tl = gsap.timeline({ defaults: { ease: 'power2.easeIn'}});
 
@@ -36,14 +42,15 @@ export default class Menu {
             autoAlpha: 1,
             // duration: .5
         }, 'start');
-        tl.fromTo(this.dom.title.chars, {
+        tl.fromTo( this.dom.title[0].chars, {
+        // tl.fromTo(this.dom.title.chars, {
             stagger: 0.01,
             yPercent: 100,
             // duration: 0.2
         },{
             stagger: 0.01,
             yPercent: 0,
-            // duration: 0.2
+            // duration: 5
         }, 'start');
         tl.fromTo(this.dom.list, {
             stagger: 0.01,
@@ -58,7 +65,7 @@ export default class Menu {
         this.isOpen = true;
     }
     animationClose() {
-        console.log('running close animation', this.isOpen)
+        // console.log('running close animation', this.isOpen)
         const tl = gsap.timeline({ defaults: { ease: 'power2.easeIn'}});
         // tl.set(this.dom.nav, {
         //     autoAlpha: 0
@@ -70,7 +77,8 @@ export default class Menu {
         },{
             autoAlpha: 0,
         }, 'start');
-        tl.fromTo(this.dom.title.chars, {
+        tl.fromTo(this.dom.title[0].chars, {
+        // tl.fromTo(this.dom.title.chars, {
             stagger: 0.01,
             yPercent: 0,
             // duration: 0.2

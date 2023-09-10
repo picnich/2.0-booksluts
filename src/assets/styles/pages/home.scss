@@ -22,8 +22,15 @@
     h1 {
         font-size: 15vw;
         font-weight: bold;
+        overflow-y: hidden;
+
         > div {
             overflow-y: hidden;
+        }
+        .char {
+            display: inline-block;
+            line-height: 1.1;
+            margin-bottom: -2vw;
         }
 
         @media screen and (min-width: 1024px) {
@@ -36,8 +43,16 @@
     p {
         font-family: var(--font-f-sans);
         font-size: 1.12rem;
+        overflow-y: hidden;
+
         > div {
             overflow-y: hidden;
+        }
+        
+        .char {
+            display: inline-block;
+            line-height: 1.1;
+            margin-bottom: -2vw;
         }
     }
 }

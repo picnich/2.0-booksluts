@@ -363,9 +363,13 @@ body.dark {
 .nav .navContainer h2 {
   font-size: clamp(6rem, 20vw, 10rem);
   font-weight: bold;
+  overflow-y: hidden;
 }
 .nav .navContainer h2 > div {
   overflow-y: hidden;
+}
+.nav .navContainer h2 .char {
+  display: inline-block;
 }
 .nav .navContainer ul {
   max-width: 55rem;
@@ -527,9 +531,15 @@ body.dark {
 .pageDesc h1 {
   font-size: 15vw;
   font-weight: bold;
+  overflow-y: hidden;
 }
 .pageDesc h1 > div {
   overflow-y: hidden;
+}
+.pageDesc h1 .char {
+  display: inline-block;
+  line-height: 1.1;
+  margin-bottom: -2vw;
 }
 @media screen and (min-width: 1024px) {
   .pageDesc h1 {
@@ -539,9 +549,15 @@ body.dark {
 .pageDesc p {
   font-family: var(--font-f-sans);
   font-size: 1.12rem;
+  overflow-y: hidden;
 }
 .pageDesc p > div {
   overflow-y: hidden;
+}
+.pageDesc p .char {
+  display: inline-block;
+  line-height: 1.1;
+  margin-bottom: -2vw;
 }
 .home {
   position: relative;
@@ -984,10 +1000,20 @@ figure {
   text-transform: uppercase;
   hyphens: auto;
   margin-bottom: 1rem;
+  overflow-y: hidden !important;
 }
 .bookTemplate .coverPage .bookDetail-title > div {
   overflow-y: hidden !important;
   padding-top: 20px;
+}
+.bookTemplate .coverPage .bookDetail-title .word {
+  overflow-y: hidden;
+  display: inline-flex;
+}
+.bookTemplate .coverPage .bookDetail-title .word .char {
+  display: inline-block;
+  line-height: 1.1;
+  margin-bottom: -2vw;
 }
 @media screen and (min-width: 768px) {
   .bookTemplate .coverPage .bookDetail-title {
@@ -1005,10 +1031,16 @@ figure {
   font-size: 1.6rem;
   font-family: var(--font-f-serif);
   line-height: 1;
+  overflow-y: hidden !important;
 }
 .bookTemplate .coverPage .bookDetail-author > div {
   overflow-y: hidden !important;
   padding-top: 20px;
+}
+.bookTemplate .coverPage .bookDetail-author .char {
+  display: inline-block;
+  line-height: 1.1;
+  margin-bottom: -2vw;
 }
 @media screen and (min-width: 768px) {
   .bookTemplate .coverPage .bookDetail-author {
@@ -1114,6 +1146,9 @@ figure {
   font-size: 17vw;
   text-transform: uppercase;
   line-height: 1;
+}
+.bookTemplate .summary h2 .char {
+  display: inline-block;
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
   .bookTemplate .summary h2 {
@@ -1551,6 +1586,11 @@ figure {
 .bookTemplate .nextBook .next span > div {
   overflow-y: hidden;
   display: inline;
+}
+.bookTemplate .nextBook .next span .char {
+  display: inline-block;
+  line-height: 1.1;
+  margin-bottom: -2vw;
 }
 .bookTemplate .nextBook .next img {
   max-width: 13vw;

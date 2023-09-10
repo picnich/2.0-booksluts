@@ -1,13 +1,13 @@
 import barba from '@barba/core';
 import LocomotiveScroll from 'locomotive-scroll';
 // import regeneratorRuntime from "regenerator-runtime";
-import { gsap } from "gsap";
+import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Flip } from "gsap/dist/Flip";
-import { SplitText } from "gsap/SplitText";
+// import { SplitText } from "gsap/dist/SplitText";
 
-gsap.registerPlugin(ScrollTrigger, SplitText);
-gsap.registerPlugin(Flip);
+gsap.registerPlugin(ScrollTrigger, Flip);
+// gsap.registerPlugin(SplitText);
 
 console.log('App.js is loaded')
 

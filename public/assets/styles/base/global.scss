@@ -74,8 +74,14 @@ body.dark {
         h2 {
             font-size: clamp(6rem, 20vw, 10rem);
             font-weight: bold;
+            overflow-y: hidden;
+            
             > div {
                 overflow-y: hidden;
+            }
+
+            .char {
+                display: inline-block;
             }
         }
         ul {

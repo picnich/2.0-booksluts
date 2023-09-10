@@ -142,12 +142,25 @@
                 text-transform: uppercase;
                 hyphens: auto;
                 margin-bottom: 1rem;
+                overflow-y: hidden !important;
                 
                 > div {
                     overflow-y: hidden !important;
                     padding-top: 20px;
                 }
 
+                .word {
+                    overflow-y: hidden;
+                    // padding-top: 1vh;
+                    display: inline-flex;
+
+                    .char {
+                        display: inline-block;
+                        line-height: 1.1;
+                        margin-bottom: -2vw;
+                    }
+                }
+                
                 @media screen and (min-width: 768px) {
                     font-size: 10vw;
                 }
@@ -162,9 +175,16 @@
                 font-size: 1.6rem;
                 font-family: var(--font-f-serif);
                 line-height: 1;
+                overflow-y: hidden !important;
+
                 > div {
                     overflow-y: hidden !important;
                     padding-top: 20px;
+                }
+                .char {
+                    display: inline-block;
+                    line-height: 1.1;
+                    margin-bottom: -2vw;
                 }
                 @media screen and (min-width: 768px) {
                     font-size: 2rem;
@@ -279,6 +299,10 @@
             font-size: 17vw;
             text-transform: uppercase;
             line-height: 1;
+
+            .char {
+                display: inline-block;
+            }
 
             @media screen and (max-width: 768px) and (orientation: portrait) {
                 top: calc(var(--book-padding) + 1rem);
@@ -741,6 +765,8 @@
             overflow-y: hidden;
 
             
+
+            
             @media screen and (min-width: 768px) {
                 font-size: 4rem;
                 left: calc(var(--book-padding) + 3rem);
@@ -768,8 +794,16 @@
                     overflow-y: hidden;
                     display: inline;
                 }
+
+                .char {
+                    display: inline-block;
+                    line-height: 1.1;
+                    margin-bottom: -2vw;
+                }
+    
             }
 
+            
             img {
                 // max-height: 8rem;
                 max-width: 13vw;

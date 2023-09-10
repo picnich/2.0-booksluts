@@ -1,10 +1,15 @@
-import { gsap } from "gsap";
+import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { SplitText } from "gsap/SplitText";
+// import { SplitText } from "gsap/dist/SplitText";
 import { Flip } from "gsap/dist/Flip";
 
-gsap.registerPlugin(ScrollTrigger, SplitText);
-gsap.registerPlugin(Flip);
+import "splitting/dist/splitting.css";
+import "splitting/dist/splitting-cells.css";
+import Splitting from "splitting";
+
+
+gsap.registerPlugin(ScrollTrigger, Flip);
+// gsap.registerPlugin(SplitText);
 
 /**
  * Default/Standard Animationz
@@ -66,23 +71,27 @@ function hide(elem) {
   
 function handleBookHeadlines() {
     const bookTitle = document.querySelectorAll('h1.bookDetail-title');
-    const splitTitle = new SplitText(bookTitle);
-    const bookAuthor = document.querySelectorAll('h1.bookDetail-author');
-    const splitAuthor = new SplitText(bookAuthor);
+    const splitTitle = Splitting({ target: bookTitle, by: 'chars' });
+    // const splitTitle = new SplitText(bookTitle);
+    
+    const bookAuthor = document.querySelectorAll('.bookDetail-author');
+    const splitAuthor = Splitting({target: bookAuthor, by: 'chars'});
+    // const splitAuthor = new SplitText(bookAuthor);
     
     const headlines = document.querySelectorAll('.bookTemplate-section h2');
     headlines.forEach(el => {
-        const splitText = new SplitText(el);
+        // const splitText = new SplitText(el);
+        const splitText = Splitting({target: el, by: 'chars'});
         // console.log(splitText)
-        hide(splitText.chars);
+        hide(splitText[0].chars);
         ScrollTrigger.create({
             trigger: el,
             horizontal: true,
             scroller: '[data-scroll-container]',
             start: "25% 50%",
-            onEnter: function() { fadeSlideIn(splitText.chars) }, 
-            // onEnterBack: function() { fadeSlideIn(splitText.chars) },
-            // onLeave: function() { hide(splitText)}
+            onEnter: function() { fadeSlideIn(splitText[0].chars) }, 
+            // onEnterBack: function() { fadeSlideIn(splitText[0].chars) },
+            // onLeave: function() { hide(splitText[0])}
         })
     });
 }
@@ -108,8 +117,11 @@ function revealHomeBooks(books, numbers) {
     })
 }
 function homepageTitleEnter(title, subtitle, header) {
-    const splitTitle = new SplitText(title);
-    const splitSubTitle = new SplitText(subtitle);
+    console.log('homepage title enter')
+    const splitTitle = Splitting({target: title, by: 'chars'});
+    const splitSubTitle = Splitting({ target: subtitle, by: 'chars'});
+    // const splitTitle = new SplitText(title);
+    // const splitSubTitle = new SplitText(subtitle);
     const tl = gsap.timeline({ 
         defaults: { 
             ease: 'power2.easeIn'
@@ -117,12 +129,12 @@ function homepageTitleEnter(title, subtitle, header) {
         // onComplete: () => done() 
     });
     tl.addLabel('start')
-    tl.from(splitTitle.chars, {
+    tl.from(splitTitle[0].chars, {
         y: 100, 
         // autoAlpha: 0,
         stagger: 0.01
     }, 'start');
-    tl.from(splitSubTitle.chars, {
+    tl.from(splitSubTitle[0].chars, {
         y: 100, 
         // autoAlpha: 0,
         stagger: 0.01
@@ -138,8 +150,10 @@ function homepageTitleLeave() {
     const title = document.querySelectorAll('.pageDesc h1');
     const subtitle = document.querySelectorAll('.pageDesc p');
 
-    const splitTitle = new SplitText(title);
-    const splitSubTitle = new SplitText(subtitle);
+    const splitTitle = Splitting({target: title, by: 'chars'});
+    const splitSubTitle = Splitting({target: subtitle, by: 'chars'});
+    // const splitTitle = new SplitText(title);
+    // const splitSubTitle = new SplitText(subtitle);
 
     const tl = gsap.timeline({ 
         defaults: { 
@@ -148,12 +162,12 @@ function homepageTitleLeave() {
         // onComplete: () => done() 
     });
     tl.addLabel('start')
-    tl.to(splitTitle.words, {
+    tl.to(splitTitle[0].chars, {
         y: 100, 
         // autoAlpha: 0,
         stagger: 0.01
     }, 'start');
-    tl.to(splitSubTitle.words, {
+    tl.to(splitSubTitle[0].chars, {
         y: 100, 
         // autoAlpha: 0,
         stagger: 0.01
@@ -218,11 +232,14 @@ function BookEnter(nextContainer) {
 
     // bookTitle.innerHTML = bookTitle.innerHTML.replace("-", "<span>-</span>");
 
-    const splitTitle = new SplitText(bookTitle);
-    const splitAuthor = new SplitText(author);
+    const splitTitle = Splitting({ target: bookTitle, by: 'chars' });
+    const splitAuthor = Splitting({ target: author, by: 'chars '});
+    // const splitTitle = new SplitText(bookTitle);
+    // const splitAuthor = new SplitText(author);
     
-    const nextBookTitle = [...document.querySelectorAll('.next span')];
-    const splitNextTitle = new SplitText(nextBookTitle);
+    const nextBookTitle = [...document.querySelectorAll('.next > span')];
+    const splitNextTitle = Splitting({target: nextBookTitle, by: 'chars'});
+    // const splitNextTitle = new SplitText(nextBookTitle);
     const nextBookImg = document.querySelector('.nextBook--img');
     
     const tl = gsap.timeline({ defaults: { ease: 'power2.easeIn'}});
@@ -245,12 +262,12 @@ function BookEnter(nextContainer) {
             duration: 0.25, 
         },"start+=0.25")
     }
-    tl.from(splitTitle.words, {
+    tl.from(splitTitle[0].chars, {
         yPercent: 120,
         duration: .3,
         stagger: 0.04,
     },"start")
-    tl.from(splitAuthor.chars, {
+    tl.from(splitAuthor[0].chars, {
         yPercent: 200,
         duration: 0.2,
         // delay: 1,
@@ -283,9 +300,9 @@ function BookEnter(nextContainer) {
             duration: 0.2,
         }, "start+=.6")
     }
-    tl.from(splitNextTitle.chars, {
+    tl.from(splitNextTitle[0].chars, {
         yPercent: 150,
-        // duration: 0.2,
+        duration: 3,
         stagger: 0.02,
     }, "start");
     tl.from(nextBookImg, {
@@ -311,13 +328,17 @@ function bookLeave(currentContainer, done) {
     
     // Next Book/End of page
     const nextBookTitle = currentContainer.querySelectorAll('.next span');
-    const splitNextTitle = new SplitText(nextBookTitle);
+    const splitNextTitle = Splitting({target: nextBookTitle, by: 'chars'});
+    // const splitNextTitle = new SplitText(nextBookTitle);
     const nextBookImg = currentContainer.querySelector('.nextBook--img');
     const nextBookBG = currentContainer.querySelector('.nextBook-bg');
     const nextBookSectionTitle = currentContainer.querySelector('.nextBook h2 ');
-    const splitNextSectionTitle = new SplitText(nextBookSectionTitle);
-    const splitTitle = new SplitText(bookTitle);
-    const splitAuthor = new SplitText(author);
+    const splitNextSectionTitle = Splitting({nextBookSectionTitle});
+    const splitTitle = Splitting({ target: bookTitle, by: 'chars'});
+    const splitAuthor = Splitting({target: author, by: 'chars'});
+    // const splitNextSectionTitle = new SplitText(nextBookSectionTitle);
+    // const splitTitle = new SplitText(bookTitle);
+    // const splitAuthor = new SplitText(author);
     
     const tl = gsap.timeline({ 
         defaults: { 
@@ -342,12 +363,12 @@ function bookLeave(currentContainer, done) {
         yPercent: 100,
         duration: .3, 
     },"start")
-    tl.to(splitTitle.words, {
+    tl.to(splitTitle[0].chars, {
         yPercent: 120,
         duration: .2,
         stagger: 0.02,
     },"start")
-    tl.to(splitAuthor.chars, {
+    tl.to(splitAuthor[0].chars, {
         yPercent: 200,
         duration: 0.2,
         // delay: 1,
@@ -381,7 +402,7 @@ function bookLeave(currentContainer, done) {
         opacity: 0,
     }, "start")
 
-    tl.to(splitNextTitle.chars, {
+    tl.to(splitNextTitle[0].chars, {
         yPercent: 150,
         // duration: 0.2,
         stagger: 0.02,
@@ -390,7 +411,7 @@ function bookLeave(currentContainer, done) {
         yPercent: 150,
         // duration: 0.2,
     }, "start");
-    tl.to(splitNextSectionTitle.chars, {
+    tl.to(splitNextSectionTitle[0].chars, {
         yPercent: 100,
         stagger: 0.02,
         duration: .25,
