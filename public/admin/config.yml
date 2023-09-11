@@ -1,15 +1,17 @@
+local_backend: true 
 backend:
   name: git-gateway
   branch: main
 media_folder: "public/assets/books"
 public_folder: "/assets/books" 
+# For Local Testing
 collections:
-  - name: booksluts
-    label: Book Sluts
+  - name: bookslut
+    label: Book Slut
     folder: "src/bookslut"
     create: true
     fields:
-      - {name: name, label: Name, widget: "string"}
+      - {name: name, label: "Book Slut Name", widget: "string"}
       - {name: image, label: "Image", widget: "image"}
       - {name: bio, label: Bio, widget: text}
   - name: "book" # Used in routes, e.g., /admin/collections/blog
@@ -49,7 +51,7 @@ collections:
           # - name: selectedBy
           #   label: Selected By
           #   widget: relation
-          #   collection: booksluts
+          #   collection: bookslut
           #   searchFields: [name]
           #   valueField: name
 
