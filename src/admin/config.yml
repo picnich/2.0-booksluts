@@ -45,12 +45,12 @@ collections:
         widget: "object"
         collapsed: true
         fields: 
-          - {label: "Book Summary", name: "summary", widget: "list", fields: {
-            label: "Paragraph", name: "paragraph", widget: "string"
-          }}
-          - {label: "Highlights", name: "highlights", widget: "list", fields: {
-            label: "Highlight", name: "highlight", widget: "string"
-          }}
+          - {label: "Book Summary", name: "summary", widget: "list", fields: [
+              { label: "Paragraph", name: "paragraph", widget: "string"}
+            ]}
+          - {label: "Highlights", name: "highlights", widget: "list", fields: [
+              { label: "Highlight", name: "highlight", widget: "string"}
+            ]}
           - {label: "Behind the Scenes Image", name: "btsImage", widget: "image"}
 
 
