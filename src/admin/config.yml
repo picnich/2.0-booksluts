@@ -1,10 +1,12 @@
-# local_backend: true 
+# For Local Testing
+local_backend: true 
 backend:
   name: git-gateway
   branch: main
 media_folder: "public/assets/books"
 public_folder: "/assets/books" 
-# For Local Testing
+editor: 
+  preview: false
 collections:
   - name: bookslut
     label: Book Slut
