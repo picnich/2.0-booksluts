@@ -3,13 +3,14 @@ local_backend: true
 backend:
   name: git-gateway
   branch: main
-media_folder: "public/assets/images/books"
-public_folder: "/assets" 
+media_folder: "public/assets/images"
+public_folder: "/assets/images" 
 editor: 
   preview: false
 collections:
   - name: bookslut
     label: Book Slut
+    identifier_field: name
     folder: "src/bookslut"
     create: true
     fields:
@@ -50,12 +51,13 @@ collections:
           - {label: "Colour - Primary", name: "colourPrimary", widget: "color", default: "#ff0"}
           - {label: "Colour - Secondary", name: "colourSecondary", widget: "color", default: "#ff0"}
           - {label: "Tags", name: "tags", widget: "list", default: ["post"]}
-          # - name: selectedBy
-          #   label: Selected By
-          #   widget: relation
-          #   collection: bookslut
-          #   searchFields: [name]
-          #   valueField: name
+          - name: selectedBy
+            label: Selected By
+            widget: relation
+            collection: bookslut
+            searchFields: [name]
+            valueField: name
+
 
 
 
@@ -64,21 +66,28 @@ collections:
         widget: "object"
         collapsed: true
         fields: 
-          # - {label: "Book Summary", name: "summary", widget: "list", fields: [
-          #     { label: "Paragraph", name: "paragraph", widget: "string"}
-          #   ]}
-          # - {label: "Highlights", name: "highlights", widget: "list", fields: [
-          #     { label: "Highlight", name: "highlight", widget: "string"}
-          #   ]}
+          - {label: "Book Summary", name: "summary", widget: "list", fields: [
+              { label: "Paragraph", name: "paragraph", widget: "string"}
+            ]}
+          - {label: "Highlights", name: "highlights", widget: "list", fields: [
+              { label: "Highlight", name: "highlight", widget: "string"}
+            ]}
           - {label: "Behind the Scenes Image", name: "btsImage", widget: "image"}
+  
 
+      - name: nextBook
+        label: Next Book
+        widget: relation
+        collection: book
+        searchFields: [bookTitle]
+        valueField: bookTitle
 
-      - label: "Next Book"
-        name: "nextBook"
-        widget: "object"
-        collapsed: true
-        fields: 
-          - {label: "Name", name: "nextBookName", widget: "string"}
-          - {label: "Slug", name: "nextBookSlug", widget: "string"}
-          - {label: "Cover Image", name: "nextBookCover", widget: "image"}
-          - {label: "Background Colour", name: "nextBookColour", widget: "color", default: "#ff0"}
+      # - label: "Next Book"
+      #   name: "nextBook"
+      #   widget: "object"
+      #   collapsed: true
+      #   fields: 
+      #     - {label: "Name", name: "nextBookName", widget: "string"}
+      #     - {label: "Slug", name: "nextBookSlug", widget: "string"}
+      #     - {label: "Cover Image", name: "nextBookCover", widget: "image"}
+      #     - {label: "Background Colour", name: "nextBookColour", widget: "color", default: "#ff0"}
