@@ -1,15 +1,9 @@
 # Simple 11ty Starter Template
 
 
-### Admin.yml
-- [ ] Cant figure out how to use Objets in admin.yml
-- [ ] Include 
-
-
-
-### Convert
-- [ ] Port over the "Book" page 
-- [ ] Continue with the Home
+### To Do
+- [ ] Add Relation from Book Collection to Book Slut (Collection). Need to create that collection
+- [ ] Fix Highlights/Summary Bug for backend
 
 
 

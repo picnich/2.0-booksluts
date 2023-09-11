@@ -4,6 +4,14 @@ backend:
 media_folder: "public/assets/books"
 public_folder: "/assets/books" 
 collections:
+  - name: booksluts
+    label: Book Sluts
+    folder: "src/bookslut"
+    create: true
+    fields:
+      - {name: name, label: Name, widget: "string"}
+      - {name: image, label: "Image", widget: "image"}
+      - {name: bio, label: Bio, widget: text}
   - name: "book" # Used in routes, e.g., /admin/collections/blog
     label: "Book" # Used in the UI
     identifier_field: bookTitle
@@ -38,6 +46,13 @@ collections:
           - {label: "Colour - Primary", name: "colourPrimary", widget: "color", default: "#ff0"}
           - {label: "Colour - Secondary", name: "colourSecondary", widget: "color", default: "#ff0"}
           - {label: "Tags", name: "tags", widget: "list", default: ["post"]}
+          # - name: selectedBy
+          #   label: Selected By
+          #   widget: relation
+          #   collection: booksluts
+          #   searchFields: [name]
+          #   valueField: name
+
 
 
       - label: "Book Content"
