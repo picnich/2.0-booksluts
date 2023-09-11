@@ -35,8 +35,8 @@ collections:
           - {label: "Date Read Alt", name: "dateReadAlt", widget: "string"}
           - {label: "Selected By", name: "bookslutName", widget: "string"}
           - {label: "Selected By, Image", name: "bookslutImage", widget: "image"}
-          - {label: "Colour - Primary", name: "colourPrimary", widget: "color"}
-          - {label: "Colour - Secondary", name: "colourSecondary", widget: "color"}
+          - {label: "Colour - Primary", name: "colourPrimary", widget: "color", default: "#ff0"}
+          - {label: "Colour - Secondary", name: "colourSecondary", widget: "color", default: "#ff0"}
           - {label: "Tags", name: "tags", widget: "list", default: ["post"]}
 
 
@@ -62,4 +62,4 @@ collections:
           - {label: "Name", name: "nextBookName", widget: "string"}
           - {label: "Slug", name: "nextBookSlug", widget: "string"}
           - {label: "Cover Image", name: "nextBookCover", widget: "image"}
-          - {label: "Background Colour", name: "nextBookColour", widget: "color"}
+          - {label: "Background Colour", name: "nextBookColour", widget: "color", default: "#ff0"}
