@@ -6,17 +6,18 @@ public_folder: "/assets/books"
 collections:
   - name: "book" # Used in routes, e.g., /admin/collections/blog
     label: "Book" # Used in the UI
-    identifier_field: "aboutBook.title"
+    identifier_field: bookTitle
     folder: "src/books" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
+      - { label: 'Title of Book', name: 'bookTitle', widget: 'string' }
       - label: "About the Book"
         name: "aboutBook"
         widget: "object"
         collapsed: true
         fields: 
-          - {label: "Title", name: "title", widget: "string"}
+          # - {label: "Title", name: "title", widget: "string"}
           # - {label: "Book Title", name: "bookTitle", widget: "string"}
           - {label: "Slug", name: "slug", widget: "string"}
           - {label: "Author", name: "author", widget: "string"}

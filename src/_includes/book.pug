@@ -29,7 +29,7 @@ block content
             .coverPage-col.bookDetail(data-scroll-speed="1.0" data-scroll="true")
                 div
                     p.bookDetail-author By: #{aboutBook.author}
-                    h1.bookDetail-title= aboutBook.title
+                    h1.bookDetail-title= bookTitle
                     .bookDetail-recommendation
                         img(alt=bookslutsInfo.bookslutName src=bookslutsInfo.bookslutImage)
                         .recommendedBy
@@ -64,7 +64,7 @@ block content
         section.bookTemplate-section.highlights(data-scroll-section="true")
             h2 Highlights
 
-            .highlight.horizontal(data-scroll="true", data-scroll-speed="1.2")
+            .highlight(data-scroll="true", data-scroll-speed="1.2")
                 for highlight in bookContent.highlights 
                     //- p highlight
                     .highlight-item

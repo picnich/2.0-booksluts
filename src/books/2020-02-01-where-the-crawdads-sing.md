@@ -1,6 +1,7 @@
 ---
+bookTitle: Where the Crawdads Sing
 aboutBook: 
-    title: Where the Crawdads Sing
+    # title: Where the Crawdads Sing
     slug: where-the-crawdads-sing
     permalink: "/{{ title | slugify }}/"
     author: Delia Owens

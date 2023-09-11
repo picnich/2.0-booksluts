@@ -1,6 +1,7 @@
 ---
+bookTitle: Normal People
 aboutBook: 
-    title: Normal People
+    # title: Normal People
     slug: normal-people
     permalink: "/{{ title | slugify }}/"
     author: Salley Rooney
