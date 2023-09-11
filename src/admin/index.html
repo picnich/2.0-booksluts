@@ -24,13 +24,14 @@
         });
       }
   </script>
-  <script src="react/umd/react.production.min.js"></script>
-
-  <script src="@pake/react-color/lib/umd/index.js"></script>
-  <script src="color.js"></script>
-
   <script>
-    CMS.registerWidget('color', NetlifyCMSWidgetColor.Control)
+    import {
+      ColorControl,
+      ColorPreview,
+    } from "netlify-cms-widget-colorpicker";
+
+    CMS.registerWidget("color", ColorControl, ColorPreview);
   </script>
+  
 </body>
 </html>

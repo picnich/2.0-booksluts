@@ -35,8 +35,8 @@ collections:
           - {label: "Date Read Alt", name: "dateReadAlt", widget: "string"}
           - {label: "Selected By", name: "bookslutName", widget: "string"}
           - {label: "Selected By, Image", name: "bookslutImage", widget: "image"}
-          - {label: "Colour - Primary", name: "colourPrimary", widget: "color"}
-          - {label: "Colour - Secondary", name: "colourSecondary", widget: "color"}
+          - {label: "Colour - Primary", name: "colourPrimary", widget: "color", default: "#ff0"}
+          - {label: "Colour - Secondary", name: "colourSecondary", widget: "color", default: "#ff0"}
           - {label: "Tags", name: "tags", widget: "list", default: ["post"]}
 
 
@@ -45,12 +45,12 @@ collections:
         widget: "object"
         collapsed: true
         fields: 
-          - {label: "Book Summary", name: "summary", widget: "list", fields: {
-            label: "Paragraph", name: "paragraph", widget: "string"
-          }}
-          - {label: "Highlights", name: "highlights", widget: "list", fields: {
-            label: "Highlight", name: "highlight", widget: "string"
-          }}
+          # - {label: "Book Summary", name: "summary", widget: "list", fields: [
+          #     { label: "Paragraph", name: "paragraph", widget: "string"}
+          #   ]}
+          # - {label: "Highlights", name: "highlights", widget: "list", fields: [
+          #     { label: "Highlight", name: "highlight", widget: "string"}
+          #   ]}
           - {label: "Behind the Scenes Image", name: "btsImage", widget: "image"}
 
 
@@ -62,4 +62,4 @@ collections:
           - {label: "Name", name: "nextBookName", widget: "string"}
           - {label: "Slug", name: "nextBookSlug", widget: "string"}
           - {label: "Cover Image", name: "nextBookCover", widget: "image"}
-          - {label: "Background Colour", name: "nextBookColour", widget: "color"}
+          - {label: "Background Colour", name: "nextBookColour", widget: "color", default: "#ff0"}
