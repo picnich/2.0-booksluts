@@ -29,6 +29,7 @@
     "gsap": "file:gsap-bonus.tgz",
     "imagesloaded": "^5.0.0",
     "locomotive-scroll": "^4.1.4",
+    "netlify-cms-widget-colorpicker": "^1.0.3",
     "splitting": "^1.0.6"
   }
 }
