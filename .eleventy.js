@@ -7,7 +7,7 @@ const { DateTime } = require('luxon')
 module.exports = function(eleventyConfig) {
     eleventyConfig.on("eleventy.before", async () => {
         await esbuild.build({
-            entryPoints: ["./src/assets/scripts/main.js", "./src/assets/styles/index.scss"],
+            entryPoints: ["./src/assets/scripts/main.js", "./src/assets/styles/index.scss", "./src/admin/js/cms.js"],
             outdir: "public/bundle",
             // outfile: "public/bundle.js",
             minify: process.env.ELEVENTY_ENV === "production",
