@@ -786,6 +786,8 @@
             text-decoration: none;
             color: white;
             overflow-y: hidden;
+            text-align: right;
+            max-width: 90%;
 
             span {
                 overflow-y: hidden;
@@ -793,6 +795,9 @@
                 > div {
                     overflow-y: hidden;
                     display: inline;
+                }
+                .word {
+                    display: inline-flex;
                 }
 
                 .char {
@@ -802,12 +807,13 @@
                 }
     
             }
-
             
-            img {
+            
+            img.nextBook--img {
                 // max-height: 8rem;
                 max-width: 13vw;
                 display: none;
+                margin-left: 1rem;
                 
                 @media screen and (min-width: 768px) {
                     display: inline-block;

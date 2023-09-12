@@ -88,7 +88,7 @@ block content
                         h2 Next Book
                         a(href=book.url).next
                             span= book.data.bookTitle
-                            img(src=book.data.aboutBook.coverImage, alt=book.data.bookTitle + " Book Cover")
+                            img(src=book.data.aboutBook.coverImage, alt=book.data.bookTitle + " Book Cover").nextBook--img
         //- section.bookTemplate-section.nextBook(data-scroll-section="true")
         //-     .nextBook-bg(style={'--colour--nextBook': nextBook.nextBookColour})
         //-     h2 Next Book

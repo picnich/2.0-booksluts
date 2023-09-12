@@ -1579,6 +1579,8 @@ figure {
   text-decoration: none;
   color: white;
   overflow-y: hidden;
+  text-align: right;
+  max-width: 90%;
 }
 .bookTemplate .nextBook .next span {
   overflow-y: hidden;
@@ -1587,23 +1589,27 @@ figure {
   overflow-y: hidden;
   display: inline;
 }
+.bookTemplate .nextBook .next span .word {
+  display: inline-flex;
+}
 .bookTemplate .nextBook .next span .char {
   display: inline-block;
   line-height: 1.1;
   margin-bottom: -2vw;
 }
-.bookTemplate .nextBook .next img {
+.bookTemplate .nextBook .next img.nextBook--img {
   max-width: 13vw;
   display: none;
+  margin-left: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .bookTemplate .nextBook .next img {
+  .bookTemplate .nextBook .next img.nextBook--img {
     display: inline-block;
     max-width: 9vh;
   }
 }
 @media screen and (min-width: 1024px) {
-  .bookTemplate .nextBook .next img {
+  .bookTemplate .nextBook .next img.nextBook--img {
     max-width: 13vh;
   }
 }

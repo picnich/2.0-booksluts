@@ -79,14 +79,15 @@ barba.hooks.beforeLeave(() => {
           const done = this.async();
 
 
-  
+            
           homepageLeave(data.current.container, done);
           bookLeave(data.current.container, done);
+          
           // homepageLeave(books, numbers, header, done);
                   // data.current.container.remove();
         },
         
-              async beforeEnter(data) {
+        async beforeEnter(data) {
           // console.log('beforeEnteringggg')
           smooth(data.next.container);
                   ScrollTrigger.getAll().forEach(t => t.kill());
@@ -110,41 +111,40 @@ barba.hooks.beforeLeave(() => {
         },
         async once(data) {
           
-  
-          // console.log('ONNNNCE')
-          const title = document.querySelectorAll('.pageDesc h1');
-          const subtitle = document.querySelectorAll('.pageDesc p');
-          
-          homepageTitleEnter(title, subtitle);
-  
-          smooth(data.next.container)
-          revealHomeBooks(data.next.container.querySelectorAll('.cover__item-imgInner'), data.next.container.querySelectorAll('.cover__item-number'))
-          handleBookHeadlines()
-          // return fadeOut(data.next.container);
-              },
-              async leave(data) {
-          const done = this.async();
-          bookLeave(data.current.container, done);
-          // fadeOut(data.current.container);
-                  // data.current.container.remove();
-              },
+            // console.log('ONNNNCE')
+            const title = document.querySelectorAll('.pageDesc h1');
+            const subtitle = document.querySelectorAll('.pageDesc p');
+            
+            homepageTitleEnter(title, subtitle);
+    
+            smooth(data.next.container)
+            revealHomeBooks(data.next.container.querySelectorAll('.cover__item-imgInner'), data.next.container.querySelectorAll('.cover__item-number'))
+            handleBookHeadlines()
+            // return fadeOut(data.next.container);
+          },
+          async leave(data) {
+            const done = this.async();
+            bookLeave(data.current.container, done);
+            // fadeOut(data.current.container);
+            // data.current.container.remove();
+          },
         
-              async beforeEnter(data) {
-          smooth(data.next.container);
-                  ScrollTrigger.getAll().forEach(t => t.kill());
-              },
-        
-              async enter( data ) {	
+          async beforeEnter(data) {
+            smooth(data.next.container);
+            ScrollTrigger.getAll().forEach(t => t.kill());
+          },
+      
+          async enter( data ) {	
   
-          const title = document.querySelectorAll('.pageDesc h1');
-          const subtitle = document.querySelectorAll('.pageDesc p');
-          const header = document.querySelectorAll('header');
-  
-          handleBookHeadlines();
-          homepageTitleEnter(title, subtitle, header);
-          revealHomeBooks(data.next.container.querySelectorAll('.cover__item-imgInner'), data.next.container.querySelectorAll('.cover__item-number'))
-          // fadeOut(data.next.container);
-              }
+            const title = document.querySelectorAll('.pageDesc h1');
+            const subtitle = document.querySelectorAll('.pageDesc p');
+            const header = document.querySelectorAll('header');
+    
+            handleBookHeadlines();
+            homepageTitleEnter(title, subtitle, header);
+            revealHomeBooks(data.next.container.querySelectorAll('.cover__item-imgInner'), data.next.container.querySelectorAll('.cover__item-number'))
+            // fadeOut(data.next.container);
+            }
           },
       ],
   });

@@ -1,7 +1,7 @@
 doctype html
 html(lang="en")
     include head.pug
-    body.loading.homepage(data-barba="wrapper")
+    body.book(data-barba="wrapper")
         div(data-barba="container", data-barba-namespace="book")
             include header-book.pug 
             
@@ -24,4 +24,4 @@ html(lang="en")
 
             include nav-menu.pug 
 
-            include foot.pug  
+        include foot.pug  

@@ -9531,7 +9531,7 @@
     const subtitle = document.querySelectorAll(".pageDesc p");
     const splitTitle = (0, import_splitting4.default)({ target: title, by: "chars" });
     const splitSubTitle = (0, import_splitting4.default)({ target: subtitle, by: "chars" });
-    console.log(title, splitTitle);
+    console.log(title, splitTitle, "TITLE NAD SPLDKTHASDJFASJDFOASDF");
     const tl = import_gsap2.gsap.timeline({
       defaults: {
         ease: "power2.easeIn"
@@ -9539,16 +9539,18 @@
       // onComplete: () => done() 
     });
     tl.addLabel("start");
-    tl.to(splitTitle[0].chars, {
-      y: 100,
-      // autoAlpha: 0,
-      stagger: 0.01
-    }, "start");
-    tl.to(splitSubTitle[0].chars, {
-      y: 100,
-      // autoAlpha: 0,
-      stagger: 0.01
-    }, "start");
+    if (splitTitle.length && splitSubTitle.length) {
+      tl.to(splitTitle[0].chars, {
+        y: 100,
+        // autoAlpha: 0,
+        stagger: 0.01
+      }, "start");
+      tl.to(splitSubTitle[0].chars, {
+        y: 100,
+        // autoAlpha: 0,
+        stagger: 0.01
+      }, "start");
+    }
     return tl;
   }
   function homepageLeave(container, done) {
@@ -9658,7 +9660,7 @@
     }
     tl.from(splitNextTitle[0].chars, {
       yPercent: 150,
-      duration: 3,
+      // duration: 3,
       stagger: 0.02
     }, "start");
     tl.from(nextBookImg, {
@@ -9702,22 +9704,24 @@
         duration: 0.25
       }, "start");
     }
-    tl.to([book, shadow], {
-      opacity: 0,
-      yPercent: 100,
-      duration: 0.3
-    }, "start");
-    tl.to(splitTitle[0].chars, {
-      yPercent: 120,
-      duration: 0.2,
-      stagger: 0.02
-    }, "start");
-    tl.to(splitAuthor[0].chars, {
-      yPercent: 200,
-      duration: 0.2,
-      // delay: 1,
-      stagger: 0.02
-    }, "start");
+    if (book != null && shadow.length) {
+      tl.to([book, shadow], {
+        opacity: 0,
+        yPercent: 100,
+        duration: 0.3
+      }, "start");
+      tl.to(splitTitle[0].chars, {
+        yPercent: 120,
+        duration: 0.2,
+        stagger: 0.02
+      }, "start");
+      tl.to(splitAuthor[0].chars, {
+        yPercent: 200,
+        duration: 0.2,
+        // delay: 1,
+        stagger: 0.02
+      }, "start");
+    }
     if (window.innerWidth > 768) {
       tl.to(header, {
         xPercent: -100,
@@ -9744,19 +9748,21 @@
     tl.to(recommendedBy, {
       opacity: 0
     }, "start");
-    tl.to(splitNextTitle[0].chars, {
-      yPercent: 150,
-      // duration: 0.2,
-      stagger: 0.02
-    }, "start");
+    if (splitNextTitle.length && splitNextSectionTitle.length) {
+      tl.to(splitNextTitle[0].chars, {
+        yPercent: 150,
+        // duration: 0.2,
+        stagger: 0.02
+      }, "start");
+      tl.to(splitNextSectionTitle[0].chars, {
+        yPercent: 100,
+        stagger: 0.02,
+        duration: 0.25
+        // duration: 0.2,
+      }, "start");
+    }
     tl.to(nextBookImg, {
       yPercent: 150
-      // duration: 0.2,
-    }, "start");
-    tl.to(splitNextSectionTitle[0].chars, {
-      yPercent: 100,
-      stagger: 0.02,
-      duration: 0.25
       // duration: 0.2,
     }, "start");
     tl.to(nextBookBG, {
