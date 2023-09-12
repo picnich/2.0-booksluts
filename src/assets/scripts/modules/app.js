@@ -70,13 +70,15 @@ barba.hooks.beforeLeave(() => {
           BookEnter(data.next.container);
   
   
-              },
-              async leave(data) {
+        },
+          async leave(data) {
           const books = document.querySelectorAll('.cover__item-imgInner');
           const numbers = document.querySelectorAll('.cover__item-number');
           const header = document.querySelectorAll('header');
   
           const done = this.async();
+
+
   
           homepageLeave(data.current.container, done);
           bookLeave(data.current.container, done);

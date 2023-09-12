@@ -152,6 +152,8 @@ function homepageTitleLeave() {
 
     const splitTitle = Splitting({target: title, by: 'chars'});
     const splitSubTitle = Splitting({target: subtitle, by: 'chars'});
+
+    console.log(title, splitTitle)
     // const splitTitle = new SplitText(title);
     // const splitSubTitle = new SplitText(subtitle);
 
@@ -177,6 +179,7 @@ function homepageTitleLeave() {
 
 
 function homepageLeave(container, done) {
+    
     homepageTitleLeave();
 
     const books = container.querySelectorAll('.cover__item-imgInner');
@@ -333,7 +336,7 @@ function bookLeave(currentContainer, done) {
     const nextBookImg = currentContainer.querySelector('.nextBook--img');
     const nextBookBG = currentContainer.querySelector('.nextBook-bg');
     const nextBookSectionTitle = currentContainer.querySelector('.nextBook h2 ');
-    const splitNextSectionTitle = Splitting({nextBookSectionTitle});
+    const splitNextSectionTitle = Splitting({target: nextBookSectionTitle, by: 'chars'});
     const splitTitle = Splitting({ target: bookTitle, by: 'chars'});
     const splitAuthor = Splitting({target: author, by: 'chars'});
     // const splitNextSectionTitle = new SplitText(nextBookSectionTitle);

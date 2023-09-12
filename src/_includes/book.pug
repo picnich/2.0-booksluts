@@ -86,7 +86,7 @@ block content
                     section.bookTemplate-section.nextBook(data-scroll-section="true")
                         .nextBook-bg(style={'--colour--nextBook': book.data.bookslutsInfo.colourPrimary})
                         h2 Next Book
-                        a(href=book.data.slug).next
+                        a(href=book.url).next
                             span= book.data.bookTitle
                             img(src=book.data.aboutBook.coverImage, alt=book.data.bookTitle + " Book Cover")
         //- section.bookTemplate-section.nextBook(data-scroll-section="true")

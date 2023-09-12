@@ -9531,6 +9531,7 @@
     const subtitle = document.querySelectorAll(".pageDesc p");
     const splitTitle = (0, import_splitting4.default)({ target: title, by: "chars" });
     const splitSubTitle = (0, import_splitting4.default)({ target: subtitle, by: "chars" });
+    console.log(title, splitTitle);
     const tl = import_gsap2.gsap.timeline({
       defaults: {
         ease: "power2.easeIn"
@@ -9680,7 +9681,7 @@
     const nextBookImg = currentContainer.querySelector(".nextBook--img");
     const nextBookBG = currentContainer.querySelector(".nextBook-bg");
     const nextBookSectionTitle = currentContainer.querySelector(".nextBook h2 ");
-    const splitNextSectionTitle = (0, import_splitting4.default)({ nextBookSectionTitle });
+    const splitNextSectionTitle = (0, import_splitting4.default)({ target: nextBookSectionTitle, by: "chars" });
     const splitTitle = (0, import_splitting4.default)({ target: bookTitle, by: "chars" });
     const splitAuthor = (0, import_splitting4.default)({ target: author, by: "chars" });
     const tl = import_gsap2.gsap.timeline({
