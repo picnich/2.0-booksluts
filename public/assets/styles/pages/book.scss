@@ -421,10 +421,12 @@
         }
 
         .highlight {
-            display: grid; 
-            grid-template-columns: 1fr;
-            grid-gap: 1.5rem;
-            padding-left: 1rem;
+            // display: grid; 
+            // grid-template-columns: 1fr;
+            // grid-gap: 1.5rem;
+            // padding-left: 1rem;
+            column-count: 2;
+            column-gap: 2rem;
             
             @media screen and (min-width: 764px) {
                 grid-template-columns: repeat(2, 1fr);
@@ -446,6 +448,9 @@
             }
 
             &-item {
+                padding-bottom: 2rem;
+                break-inside: avoid;
+                
                 .quote {
                     font-family: var(--font-f-quote);
                     font-display: swap;

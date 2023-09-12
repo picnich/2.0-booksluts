@@ -1258,10 +1258,8 @@ figure {
   }
 }
 .bookTemplate .highlights .highlight {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1.5rem;
-  padding-left: 1rem;
+  column-count: 2;
+  column-gap: 2rem;
 }
 @media screen and (min-width: 764px) {
   .bookTemplate .highlights .highlight {
@@ -1280,6 +1278,10 @@ figure {
     max-width: 50%;
     grid-gap: 2vw 8vw;
   }
+}
+.bookTemplate .highlights .highlight-item {
+  padding-bottom: 2rem;
+  break-inside: avoid;
 }
 .bookTemplate .highlights .highlight-item .quote {
   font-family: var(--font-f-quote);
