@@ -4,9 +4,8 @@ aboutBook:
   author: Salley Rooney
   coverImage: /assets/images/test-img.jpg
   coverImageAlt: Normal People Book Cover
-  slug: normal-people
 bookslutsInfo:
-  bookNumber: '02'
+  bookNumber: 2
   bookslutImage: /assets/images/test-img.jpg
   bookslutName: Bella P.
   colourPrimary: '#87831b'

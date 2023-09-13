@@ -5,14 +5,14 @@ aboutBook:
   coverImage: /assets/images/test-img.jpg
   coverImageAlt: Wild Swans Cover Image
 bookslutsInfo:
-  bookNumber: '04'
+  bookNumber: 4
   bookslutImage: /assets/images/Cass.png
   bookslutName: Cass F.
   colourPrimary: '#df8a30'
   colourSecondary: '#df8a30'
   dateRead: 2020-06-01T13:55:57.969Z
   dateReadAlt: June 2020
-  rating: 3
+  rating: 3.8
   selectedBy: Cass F.
   tags:
     - post

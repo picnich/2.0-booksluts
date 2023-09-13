@@ -42,8 +42,8 @@ collections:
         widget: "object"
         collapsed: true
         fields: 
-          - {label: "Book Number", name: "bookNumber", widget: "string"}
-          - {label: "Rating", name: "rating", widget: "number", min: "0", max: "5"}
+          - {label: "Book Number", name: "bookNumber", widget: "number", valueType: "integer"}
+          - {label: "Rating", name: "rating", widget: "number", min: "0", max: "5", valueType: "float", default: 4}
           - {label: "Date Read", name: "dateRead", widget: "date"}
           - {label: "Date Read Alt", name: "dateReadAlt", widget: "string"}
           - {label: "Selected By", name: "bookslutName", widget: "string"}

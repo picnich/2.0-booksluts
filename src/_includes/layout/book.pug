@@ -36,7 +36,12 @@ block content
                         .bookDetail-stat--inner
                             .bookDetail-label Number
                         .bookDetail-stat--inner
-                            .bookDetail-value Book #{bookslutsInfo.bookNumber}
+                            //- .bookDetail-value Book #{bookslutsInfo.bookNumber}
+                            if bookslutsInfo.bookNumber < 9
+                                .bookDetail-value Book 0#{bookslutsInfo.bookNumber}
+                            else 
+                                .bookDetail-value Book #{bookslutsInfo.bookNumber}
+
                     .bookDetail-stat
                         .bookDetail-stat--inner
                             .bookDetail-label Book Rating

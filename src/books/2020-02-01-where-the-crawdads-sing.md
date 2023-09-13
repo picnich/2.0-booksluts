@@ -4,9 +4,8 @@ aboutBook:
   author: Delia Owens
   coverImage: /assets/images/positive-image-1.png
   coverImageAlt: Where the Crawdads Sing Book Cover
-  slug: where-the-crawdads-sing
 bookslutsInfo:
-  bookNumber: '01'
+  bookNumber: 1
   bookslutImage: /assets/images/test-img.jpg
   bookslutName: Nich P.
   colourPrimary: '#8c2204'
