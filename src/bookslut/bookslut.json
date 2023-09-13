@@ -1,3 +1,4 @@
 {
-    "tags": "bookslut"
+    "tags": "bookslut",
+    "layout": "layout/bookslut.pug"
 }

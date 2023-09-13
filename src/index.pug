@@ -14,16 +14,17 @@ block content
 
         
         .home(data-scroll-container="true")  
-            //- .content  
-            .covers
-                ul 
+            .content  
+                ul.covers
                     for book in collections.book 
                         a.cover__item-link(href=book.url)
                             figure.cover__item
                                 .cover__item-img
                                     .cover__item-imgInner(data-scroll-speed="-0.8" data-scroll="true"  style='background-image: url(' + book.data.aboutBook.coverImage + ');')
                                 figcaption.cover__item-caption
-                                    span.cover__item-number= book.data.bookslutsInfo.bookNumber
-                                //- img.cover__img(src="./assets/images/Book/WTCS.png", alt="Book Cover", data-flip-id="bookCover")
-                        
-        
+                                    //- .bookDetail-value Book 0#{bookslutsInfo.bookNumber}
+                                    if book.data.bookslutsInfo.bookNumber < 9
+                                        span.cover__item-number 0#{book.data.bookslutsInfo.bookNumber}
+                                    else 
+                                        span.cover__item-number=book.data.bookslutsInfo.bookNumber
+                                //- img.cover__img(src=book.data.aboutBook.coverImage, alt=book.data.aboutBook.coverImageAlt, data-flip-id="bookCover")        

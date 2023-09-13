@@ -2,7 +2,7 @@
 bookTitle: Where the Crawdads Sing
 aboutBook:
   author: Delia Owens
-  coverImage: /assets/images/positive-image-1.png
+  coverImage: /assets/images/WTCS.png
   coverImageAlt: Where the Crawdads Sing Book Cover
 bookslutsInfo:
   bookNumber: 1

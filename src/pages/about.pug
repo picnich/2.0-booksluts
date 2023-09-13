@@ -1,0 +1,28 @@
+---
+title: About
+---
+
+extends ../_includes/layout/base.pug
+
+block content
+    .main 
+        h1 About Us
+        p The standard Lorem Ipsum passage, used since the 1500s
+        p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+        p Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+
+        h2 Books 
+        ul 
+            for slut, index in collections.bookslut
+                //- include /snippets/snippet_bookslut.pug
+                li  
+                    img(src=slut.data.image, alt=slut.data.name + " Profile Image")
+                    h2=slut.data.name
+                    p= slut.data.bio
+                    a(href=slut.url) View Bio
+
+                    for book in collections.book 
+                        p=book.bookTitle
+                        //- if slut.data.name === item.bookslutsInfo.selectedBy
+                            p= slut.data.name

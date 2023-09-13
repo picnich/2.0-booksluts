@@ -2,12 +2,10 @@
 bookTitle: Normal People
 aboutBook:
   author: Salley Rooney
-  coverImage: /assets/images/test-img.jpg
+  coverImage: /assets/images/NormalPeople.webp
   coverImageAlt: Normal People Book Cover
 bookslutsInfo:
   bookNumber: 2
-  bookslutImage: /assets/images/test-img.jpg
-  bookslutName: Bella P.
   colourPrimary: '#87831b'
   colourSecondary: '#b5b134'
   dateRead: 2020-03-01T00:00:00.000Z

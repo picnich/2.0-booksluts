@@ -1,0 +1,35 @@
+extends base-book.pug 
+
+block prepend head
+    title BookSluts | #{name}
+
+block content 
+    main.bookTemplate(data-scroll-container="true")
+        div
+            img(alt=name src=image)
+            h1.bookDetail-title= name
+            ul 
+                for book in collections.book    
+                    //- h3= book.data.bookslutsInfo.selectedBy
+                    if book.data.bookslutsInfo.selectedBy === name 
+                        li
+                            h3= book.data.bookTitle
+
+
+
+                //- for book in collections.book 
+                    h3= bookTitle
+                    //- if name === book.bookslutsInfo.selectedBy
+                        img(alt=slut.data.name src=slut.data.image)
+                        h3= bookTitle
+                        //- .recommendedBy
+                            p Selected By
+                                p.recommendedBy-bookslut= slut.data.name
+                            //- p.recommendedBy-bookslut= bookslutsInfo.bookslutName
+                //- for slut in collections.bookslut 
+                //-     if slut.data.name === bookslutsInfo.selectedBy
+                //-         img(alt=slut.data.name src=slut.data.image)
+                //-         .recommendedBy
+                //-             p Selected By
+                //-                 p.recommendedBy-bookslut= slut.data.name
+                //-             //- p.recommendedBy-bookslut= bookslutsInfo.bookslutName

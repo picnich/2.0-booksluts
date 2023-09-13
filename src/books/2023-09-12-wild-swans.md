@@ -2,12 +2,10 @@
 bookTitle: Wild Swans
 aboutBook:
   author: Jung Chang
-  coverImage: /assets/images/test-img.jpg
+  coverImage: /assets/images/WildSwans.png
   coverImageAlt: Wild Swans Cover Image
 bookslutsInfo:
   bookNumber: 4
-  bookslutImage: /assets/images/Cass.png
-  bookslutName: Cass F.
   colourPrimary: '#df8a30'
   colourSecondary: '#df8a30'
   dateRead: 2020-06-01T13:55:57.969Z
