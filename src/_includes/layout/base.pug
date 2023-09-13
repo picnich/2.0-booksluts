@@ -1,6 +1,6 @@
 doctype html
 html(lang="en")
-  include head.pug
+  include ../components/head.pug
   body.loading.homepage(data-barba="wrapper")
     div(data-barba="container", data-barba-namespace="home")
       //- include header-home.pug 
@@ -8,7 +8,7 @@ html(lang="en")
       main 
         block content
 
-        //- include prevNextPost.njk
+        //- include ../components/prevNextPost.njk
 
 
         //- {% assign previousPost = collections.posts | getPreviousCollectionItem: page %}
@@ -20,7 +20,7 @@ html(lang="en")
         //- <p>Next Post is: {{ nextPost.data.aboutBook.title}}</p>
 
         //- {% endif %}
-      include nav-menu.pug 
+      include ../components/nav-menu.pug 
 
 
-    include foot.pug  
+    include ../components/foot.pug  

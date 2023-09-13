@@ -1,4 +1,4 @@
 {
     "tags": "book",
-    "layout": "book.pug"
+    "layout": "layout/book.pug"
 }

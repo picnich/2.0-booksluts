@@ -2,7 +2,7 @@
 title: Blog
 ---
 
-extends ../_includes/base.pug
+extends ../_includes/layout/base.pug
 
 block content
     .main 
@@ -15,4 +15,4 @@ block content
         h2 Books 
         ul 
             for book, index in collections.book
-                include /snippet_homepage.pug
+                include /snippets/snippet_homepage.pug

@@ -1,10 +1,10 @@
 doctype html
 html(lang="en")
     block head
-        include head.pug
+        include ../components/head.pug
     body.book(data-barba="wrapper")
         div(data-barba="container", data-barba-namespace="book")
-            include header-book.pug 
+            include ../components/header-book.pug 
             
             main 
             block content
@@ -23,6 +23,6 @@ html(lang="en")
             //- {% endif %}
 
 
-            include nav-menu.pug 
+            include ../components/nav-menu.pug 
 
-        include foot.pug  
+        include ../components/foot.pug  
