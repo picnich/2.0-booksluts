@@ -75,7 +75,7 @@ block content
                             p.annotation #{aboutBook.title}, #{aboutBook.author}
 
         //- Behind the Scenes
-        unless !bookContent.btsImage 
+        if bookContent.btsImage 
             section.bookTemplate-section.bts(data-scroll-section="true")
                 img(src=bookContent.btsImage, alt="Behind the scenes, when we were reading the book", data-scroll data-scroll-speed="1.2")
 

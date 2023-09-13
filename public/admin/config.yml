@@ -72,7 +72,7 @@ collections:
           - {label: "Highlights", name: "highlights", widget: "list", fields: [
               { label: "Highlight", name: "highlight", widget: "string"}
             ]}
-          - {label: "Behind the Scenes Image", name: "btsImage", widget: "image"}
+          - {label: "Behind the Scenes Image", name: "btsImage", widget: "image", required: false }
   
 
       - name: nextBook
