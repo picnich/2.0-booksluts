@@ -6,8 +6,6 @@ aboutBook:
   coverImageAlt: Where the Crawdads Sing Book Cover
 bookslutsInfo:
   bookNumber: 1
-  bookslutImage: /assets/images/test-img.jpg
-  bookslutName: Nich P.
   colourPrimary: '#8c2204'
   colourSecondary: '#faa880'
   dateRead: 2020-02-01T00:00:00.000Z
@@ -18,7 +16,7 @@ bookslutsInfo:
     - book
     - nich
 bookContent:
-  btsImage: /assets/images/positive-image-1.png
+  btsImage: /assets/images/img-crawdads.png
   highlights:
     - highlight: >-
         “I wasn't aware that words could hold so much. I didn't know a sentence

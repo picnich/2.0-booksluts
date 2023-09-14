@@ -16,7 +16,7 @@ bookslutsInfo:
     - book
     - bella
 bookContent:
-  btsImage: /assets/images/test-img.jpg
+  btsImage: /assets/images/img-normalpeople.png
   highlights:
     - highlight: >-
         “He felt the old beat of pleasure inside his body, like the rustling

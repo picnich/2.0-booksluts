@@ -23,7 +23,7 @@ block content
                                     .cover__item-imgInner(data-scroll-speed="-0.8" data-scroll="true"  style='background-image: url(' + book.data.aboutBook.coverImage + ');')
                                 figcaption.cover__item-caption
                                     //- .bookDetail-value Book 0#{bookslutsInfo.bookNumber}
-                                    if book.data.bookslutsInfo.bookNumber < 9
+                                    if book.data.bookslutsInfo.bookNumber <= 9
                                         span.cover__item-number 0#{book.data.bookslutsInfo.bookNumber}
                                     else 
                                         span.cover__item-number=book.data.bookslutsInfo.bookNumber

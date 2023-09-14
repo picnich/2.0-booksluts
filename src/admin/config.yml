@@ -22,6 +22,7 @@ collections:
     identifier_field: bookTitle
     folder: "src/books" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    # permalink: "/book/{{bookNumber}}-{{ bookTitle | slugify }}/"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: 'Title of Book', name: 'bookTitle', widget: 'string' }

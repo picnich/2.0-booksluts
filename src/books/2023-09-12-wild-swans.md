@@ -16,7 +16,7 @@ bookslutsInfo:
     - post
     - Cass
 bookContent:
-  btsImage: /assets/images/positive-image-1.png
+  btsImage: /assets/images/img-wildswans.png
   highlights:
     - highlight: >-
         “When he asked my grandmother if she would mind being poor, she said she
