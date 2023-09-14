@@ -2,9 +2,15 @@
 
 
 ### To Do
-- [ ] Add Relation from Book Collection to Book Slut (Collection). Need to create that collection
-- [ ] Fix Highlights/Summary Bug for backend
+- [x] Add Relation from Book Collection to Book Slut (Collection). Need to create that collection
+- [x] Fix Highlights/Summary Bug for backend
+- [x] Fix URL/permalink of slug
+- [ ] Fix Order of books being displayed
+    * Currently they're being sorted by published date + Alphabetically by name
+- [ ] Populate the rest of the items
+- [ ] Add Preloader
 
+ 
 
 
 

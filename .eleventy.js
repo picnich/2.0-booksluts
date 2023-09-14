@@ -37,6 +37,18 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATETIME_MED)
     })
 
+    // eleventyConfig.addTransform("transform-name", async function(content) {
+    //     console.log( "input path: ", this.inputPath, this.page.inputPath );
+    //     console.log( "output path: ", this.outputPath, this.page.outputPath );
+    
+    //     // Eleventy 2.0+ has full access to Eleventy’s `page` variable
+    //     // console.log( this.page.inputPath );
+    //     // console.log( this.page.outputPath );
+    
+    //     return content; // no change done.
+    //   });
+    
+
     return {
         dir: {
             input: "src",
