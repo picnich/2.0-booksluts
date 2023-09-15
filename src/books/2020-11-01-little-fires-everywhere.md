@@ -3,7 +3,6 @@ bookTitle: Little Fires Everywhere
 aboutBook:
   author: Celeste Ng
   coverImage: /assets/images/LitterFiresEverywhere.png
-  coverImageAlt: LFE Book Cover
 bookslutsInfo:
   bookNumber: 9
   colourPrimary: '#063824'
@@ -52,6 +51,6 @@ bookContent:
         Little Fires Everywhere explores the weight of secrets, the nature of
         art and identity, and the ferocious pull of motherhood--and the danger
         of believing that following the rules can avert disaster.
-nextBook: Conversations with Friends
+nextBook: The Great Alone
 ---
 

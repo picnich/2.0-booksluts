@@ -11,6 +11,8 @@
 ### For Release
 - [ ] Populate the rest of the items
 - [x] Remove Book Cover Alt
+- [ ] Remove Other pages
+- [ ] Remove manual Tags input from admin? Automate? 
 
 
 ### After Next Features
@@ -19,6 +21,7 @@
 - [ ] Add Meta image?
 - [ ] Add ESC key to close menu
 - [ ] Fix Next Book title length
+
 
  
 
