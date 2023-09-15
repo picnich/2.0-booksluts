@@ -6,7 +6,7 @@ block prepend head
 block content 
     main.bookTemplate(data-scroll-container="true")
         div
-            img(alt=name src=image)
+            img(alt=name, src=image)
             h1.bookDetail-title= name
             ul 
                 for book in collections.book    

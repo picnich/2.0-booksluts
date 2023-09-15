@@ -1,0 +1,8 @@
+{% assign nextBook = collections.book | getNextCollectionItem: page %}
+
+{% if nextBook %}
+    <section class="bookTemplate-section" data-scroll-section="true">
+        <h1>Nicholas</h1>
+        <h2>{{ nextBook.data.bookTitle }}</h2>
+    <section>
+{% endif %}

@@ -50,6 +50,6 @@ bookContent:
         resistance. Deftly interweaving the lives of Marie-Laure and Werner,
         Doerr illuminates the ways, against all odds, people try to be good to
         one another.
-nextBook: Where the Crawdads Sing
+nextBook: Conversations with Friends
 ---
 

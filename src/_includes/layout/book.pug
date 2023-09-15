@@ -16,9 +16,9 @@ block content
             .coverPage-col.bookCover
                 .coverPage-bg
                 .shadow
-                img.bookCover-img(data-flip-id="bookCover" alt=aboutBook.coverImageAlt src=aboutBook.coverImage data-scroll-speed="1.5" data-scroll="true")
+                img.bookCover-img(data-flip-id="bookCover", alt=bookTitle + " Book Cover", src=aboutBook.coverImage, data-scroll-speed="1.5", data-scroll="true")
 
-            .coverPage-col.bookDetail(data-scroll-speed="1.0" data-scroll="true")
+            .coverPage-col.bookDetail(data-scroll-speed="1.0", data-scroll="true")
                 div
                     p.bookDetail-author By: #{aboutBook.author}
                     h1.bookDetail-title= bookTitle
@@ -26,7 +26,7 @@ block content
                         if bookslutsInfo.selectedBy
                             for slut in collections.bookslut 
                                 if slut.data.name === bookslutsInfo.selectedBy
-                                    img(alt=slut.data.name src=slut.data.image)
+                                    img(alt=slut.data.name, src=slut.data.image)
                                     .recommendedBy
                                         p Selected By
                                             p.recommendedBy-bookslut= slut.data.name
@@ -79,7 +79,8 @@ block content
             section.bookTemplate-section.bts(data-scroll-section="true")
                 img(src=bookContent.btsImage, alt="Behind the scenes, when we were reading the book", data-scroll data-scroll-speed="1.2")
 
-    
+
+
 
         //- Next Book
         if nextBook

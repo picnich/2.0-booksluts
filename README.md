@@ -5,10 +5,20 @@
 - [x] Add Relation from Book Collection to Book Slut (Collection). Need to create that collection
 - [x] Fix Highlights/Summary Bug for backend
 - [x] Fix URL/permalink of slug
-- [ ] Fix Order of books being displayed
+- [x] Fix Order of books being displayed
     * Currently they're being sorted by published date + Alphabetically by name
+
+### For Release
 - [ ] Populate the rest of the items
+- [x] Remove Book Cover Alt
+
+
+### After Next Features
 - [ ] Add Preloader
+- [ ] Add Individual Scores
+- [ ] Add Meta image?
+- [ ] Add ESC key to close menu
+- [ ] Fix Next Book title length
 
  
 

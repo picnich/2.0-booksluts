@@ -47,6 +47,6 @@ bookContent:
         Be an Antiracist is an essential work for anyone who wants to go beyond
         an awareness of racism to the next step: contributing to the formation
         of a truly just and equitable society.
-nextBook: Where the Crawdads Sing
+nextBook: All the Light We Cannot See
 ---
 

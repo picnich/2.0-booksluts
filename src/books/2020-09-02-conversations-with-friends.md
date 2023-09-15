@@ -56,6 +56,6 @@ bookContent:
     - paragraph: >-
         Written with gem-like precision and probing intelligence, Conversations
         With Friends is wonderfully alive to the pleasures and dangers of youth.
-nextBook: Where the Crawdads Sing
+nextBook: The Great Believers
 ---
 

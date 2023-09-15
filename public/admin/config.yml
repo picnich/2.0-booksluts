@@ -36,7 +36,7 @@ collections:
           # - {label: "Slug", name: {{slug}}, widget: "string"}
           - {label: "Author", name: "author", widget: "string"}
           - {label: "Book Cover Image", name: "coverImage", widget: "image"}
-          - {label: "Book Cover Alt", name: "coverImageAlt", widget: "string"}
+          # - {label: "Book Cover Alt", name: "coverImageAlt", widget: "string"}
 
       - label: "Book Sluts Info"
         name: "bookslutsInfo"

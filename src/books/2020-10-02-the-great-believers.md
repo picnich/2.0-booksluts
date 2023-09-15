@@ -53,6 +53,6 @@ bookContent:
         the Year, a Washington Post Notable Book, a Buzzfeed Book of the Year, a
         Skimm Reads pick, and a pick for the New York Public Library's Best
         Books of the year.
-nextBook: Normal People
+nextBook: Little Fires Everywhere
 ---
 

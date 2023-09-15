@@ -49,6 +49,6 @@ bookContent:
         captures in gripping, moving—and ultimately uplifting—detail the cycles
         of violent drama visited on her own family and millions of others caught
         in the whirlwind of history.
-nextBook: Where the Crawdads Sing
+nextBook: How to be an Antiracist
 ---
 
