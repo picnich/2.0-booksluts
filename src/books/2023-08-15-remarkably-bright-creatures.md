@@ -9,14 +9,21 @@ bookslutsInfo:
   colourSecondary: '#e5852f'
   dateRead: 2023-08-01T19:41:46.791Z
   dateReadAlt: August 2023
-  rating: 4
+  rating: 3.16
   selectedBy: Dev O.
   tags:
     - post
     - dev
 bookContent:
   highlights:
-    - highlight: asdf
+    - highlight: >-
+        Humans. For the most part, you are dull and blundering. But occasionally, you can be remarkably bright creatures.
+    - highlight: >-
+        Why can humans not use their millions of words to simply tell one another what they desire?
+    - highlight: >-
+        Secrets are everywhere. Some humans are crammed full of them. How do they not explode? It seems to be a hallmark of the human species: abysmal communication skills.
+
+
   summary:
     - paragraph: >-
         Remarkably Bright Creatures, an exploration of friendship, reckoning,

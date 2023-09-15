@@ -70,7 +70,7 @@ collections:
           - {label: "Book Summary", name: "summary", widget: "list", fields: [
               { label: "Paragraph", name: "paragraph", widget: "string"}
             ]}
-          - {label: "Highlights", name: "highlights", widget: "list", fields: [
+          - {label: "Highlights", name: "highlights", widget: "list", required: false, fields: [
               { label: "Highlight", name: "highlight", widget: "string"}
             ]}
           - {label: "Behind the Scenes Image", name: "btsImage", widget: "image", required: false }

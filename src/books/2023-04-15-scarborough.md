@@ -9,14 +9,13 @@ bookslutsInfo:
   colourSecondary: '#fae902'
   dateRead: 2023-04-01T19:35:51.044Z
   dateReadAlt: April 2023
-  rating: 3
+  rating: 3.92
   selectedBy: Bella P.
   tags:
     - post
     - bella
 bookContent:
-  highlights:
-    - highlight: asdf
+  highlights: []
   summary:
     - paragraph: >-
         City of Toronto Book Award finalist Scarborough is a low-income,

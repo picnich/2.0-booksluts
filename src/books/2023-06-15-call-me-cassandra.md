@@ -9,14 +9,13 @@ bookslutsInfo:
   colourSecondary: '#ffea01'
   dateRead: 2023-06-15T19:40:35.208Z
   dateReadAlt: June 2023
-  rating: 4
+  rating: 3
   selectedBy: Cass F.
   tags:
     - post
     - cass
 bookContent:
-  highlights:
-    - highlight: asdf
+  highlights: []
   summary:
     - paragraph: >-
         From Marcial Gala, the author of the award-winning The Black Cathedral,

@@ -9,7 +9,7 @@
     * Currently they're being sorted by published date + Alphabetically by name
 
 ### For Release
-- [ ] Populate the rest of the items
+- [x] Populate the rest of the items
 - [x] Remove Book Cover Alt
 - [ ] Remove Other pages
 - [ ] Remove manual Tags input from admin? Automate? 

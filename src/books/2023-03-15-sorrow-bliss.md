@@ -9,14 +9,18 @@ bookslutsInfo:
   colourSecondary: '#058DBF'
   dateRead: 2023-03-01T20:34:28.285Z
   dateReadAlt: March 2023
-  rating: 4.5
+  rating: 4.41
   selectedBy: Nich P.
   tags:
     - post
     - nich
 bookContent:
   highlights:
-    - highlight: asdf
+    - highlight: >-
+        Everything is broken and messed up and completely fine. That is what life is. It's only the ratios that change. usually on their own.
+    - highlight: >-
+        I have been unbearable but I have never been unloved. I have felt alone but I have never been alone and I've been forgiven for the unforgiveable things I have done.
+
   summary:
     - paragraph: >-
         This novel is about a woman called Martha. She knows there is something

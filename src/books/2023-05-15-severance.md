@@ -9,14 +9,21 @@ bookslutsInfo:
   colourSecondary: '#f9bfce'
   dateRead: 2023-05-01T19:39:19.490Z
   dateReadAlt: May 2023
-  rating: 4
+  rating: 4.2
   selectedBy: Knab K.
   tags:
     - post
     - knab
 bookContent:
   highlights:
-    - highlight: asdf
+    - highlight: >-
+        To live in a city is to live the life that it was built for, to adapt to its schedule and rhythms, to move within the transit layout made for you during the morning and evening rush, winding through the crowds of fellow commuters. To live in a city is to consume its offerings. To eat at its restaurants. To drink at its bars. To shop at its stores. To pay its sales taxes. To give a dollar to its homeless.
+
+        To live in a city is to take part in and to propagate its impossible systems. To wake up. To go to work in the morning. It is also to take pleasure in those systems because, otherwise, who could repeat the same routines, year in, year out?
+        
+    - highlight: >-
+        A second chance doesn't mean you're in the clear. In many ways, it is the more difficult thing. Because a second chance means that you have to try harder. You must rise to the challenge without the blind optimism of ignorance.”
+
   summary:
     - paragraph: >-
         Candace Chen, a millennial drone self-sequestered in a Manhattan office

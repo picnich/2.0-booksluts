@@ -63,16 +63,17 @@ block content
                         p.summary-text= item.paragraph
 
         //- Highlights
-        section.bookTemplate-section.highlights(data-scroll-section="true")
-            h2 Highlights
+        if bookContent.highlights.length >= 1
+            section.bookTemplate-section.highlights(data-scroll-section="true")
+                h2 Highlights
 
-            if bookContent.highlights
-                .highlight(data-scroll="true", data-scroll-speed="1.2")
-                    for item in bookContent.highlights 
-                        //- p highlight
-                        .highlight-item
-                            p.quote= item.highlight
-                            p.annotation #{aboutBook.title}, #{aboutBook.author}
+                if bookContent.highlights
+                    .highlight(data-scroll="true", data-scroll-speed="1.2")
+                        for item in bookContent.highlights 
+                            //- p highlight
+                            .highlight-item
+                                p.quote= item.highlight
+                                p.annotation #{aboutBook.title}, #{aboutBook.author}
 
         //- Behind the Scenes
         if bookContent.btsImage 
