@@ -9,7 +9,7 @@ bookslutsInfo:
   colourSecondary: '#ffea01'
   dateRead: 2023-06-15T19:40:35.208Z
   dateReadAlt: June 2023
-  rating: 3
+  rating: 2.9
   selectedBy: Cass F.
   tags:
     - post
