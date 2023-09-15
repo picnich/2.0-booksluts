@@ -23,6 +23,7 @@ block content
                     a(href=slut.url) View Bio
 
                     for book in collections.book 
-                        p=book.bookTitle
-                        //- if slut.data.name === item.bookslutsInfo.selectedBy
-                            p= slut.data.name
+                        if book.data.bookslutsInfo.selectedBy === slut.data.name
+                            p=book.data.bookTitle
+                            //- if slut.data.name === item.bookslutsInfo.selectedBy
+                                p= slut.data.name

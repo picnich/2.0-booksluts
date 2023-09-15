@@ -3,7 +3,6 @@ bookTitle: How to be an Antiracist
 aboutBook:
   author: Ibram X. Kendi
   coverImage: /assets/images/HTBAAntiracist.webp
-  coverImageAlt: How to be an antiracist book cover
 bookslutsInfo:
   bookNumber: 5
   colourPrimary: '#040404'
@@ -11,7 +10,7 @@ bookslutsInfo:
   dateRead: 2020-07-01T20:48:54.517Z
   dateReadAlt: July 2020
   rating: 4.2
-  selectedBy: Dev H.
+  selectedBy: Dev O.
   tags:
     - post
     - dev

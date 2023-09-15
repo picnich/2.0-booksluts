@@ -10,7 +10,7 @@ bookslutsInfo:
   dateRead: 2021-01-02T04:20:40.985Z
   dateReadAlt: January 2021
   rating: 3.8
-  selectedBy: Dev H.
+  selectedBy: Dev O.
   tags:
     - post
     - Dev
