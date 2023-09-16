@@ -16,7 +16,13 @@ bookslutsInfo:
     - rach
 bookContent:
   highlights:
-    - highlight: asdf
+    - highlight: >-
+        That the beginning and the end may have been chosen for us, the string
+        already spun, but the middle had always been left undetermined, to be
+        woven and shaped by us.
+    - highlight: >-
+        I arise in the morning torn between a desire to save the world and a
+        desire to savor the world. That makes it hard to plan the day.
   summary:
     - paragraph: Eight ordinary people. One extraordinary choice.
     - paragraph: >-
