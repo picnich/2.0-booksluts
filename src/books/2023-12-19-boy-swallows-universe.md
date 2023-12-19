@@ -28,6 +28,11 @@ bookContent:
         True love like this asks lovers to cast aside what is meant to be and
         work with what is.”
     - highlight: “Do your time before it does you.”
+    - highlight: >-
+        “I’m a good man,’ Slim says. ‘But I’m a bad man too. And that’s like all
+        men, kid. We all got a bit o’ good and a bit o’ bad in us. The tricky
+        part is learnin’ how to be good all the time and bad none of the time.
+        Some of us get that right. Most of us don’t.”
   summary:
     - paragraph: >-
         A novel of love, crime, magic, fate and coming of age, set in Brisbane's
