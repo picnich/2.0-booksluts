@@ -55,6 +55,6 @@ bookContent:
         Vibrating with tenderness, Hello Beautiful is a gorgeous, profoundly
         moving portrait of what’s possible when we choose to love someone not in
         spite of who they are, but because of it.
-nextBook: Where the Crawdads Sing
+nextBook: Boy Swallows Universe
 ---
 
