@@ -50,6 +50,6 @@ bookContent:
         Shelby Van Pelt's debut novel is a gentle reminder that sometimes taking
         a hard look at the past can help uncover a future that once felt
         impossible.
-nextBook: Where the Crawdads Sing
+nextBook: Hello Beautiful
 ---
 
