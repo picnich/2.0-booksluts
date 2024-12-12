@@ -55,6 +55,6 @@ bookContent:
         dybbuks, inheritance, pyramid schemes, right-wing capitalists,
         beta-blockers, psychics, and the mostly unspoken love and shared
         experience that unite a family forever.
-nextBook: Normal People
+nextBook: Dark Matter
 ---
 
