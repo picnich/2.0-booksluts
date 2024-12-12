@@ -44,6 +44,6 @@ bookContent:
         debut by a vibrant new voice in fiction is a riveting novel about the
         search for truth, the shadow of trauma, and the persistence of love
         across time.
-nextBook: Where the Crawdads Sing
+nextBook: Long Island Compromise
 ---
 
