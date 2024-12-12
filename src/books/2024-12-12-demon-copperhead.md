@@ -9,7 +9,7 @@ bookslutsInfo:
   colourSecondary: '#ce3d2a'
   dateRead: 2024-01-01T23:10:04.114Z
   dateReadAlt: January 2024
-  rating: 4.916666667
+  rating: 4.9
   selectedBy: Bella P.
   tags:
     - post
