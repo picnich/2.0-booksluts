@@ -37,6 +37,6 @@ bookContent:
         A surreal, provocative fable about the power of memory and the trauma of
         loss, The Memory Police is a stunning new work from one of the most
         exciting contemporary authors writing in any language.
-nextBook: Where the Crawdads Sing
+nextBook: Horse
 ---
 
