@@ -35,6 +35,6 @@ bookContent:
         the tiny band’s existence. And as the story takes off, moving back and
         forth in time, and vividly depicting life before and after the pandemic,
         the strange twist of fate that connects them all will be revealed.
-nextBook: Where the Crawdads Sing
+nextBook: The Berry Pickers
 ---
 
