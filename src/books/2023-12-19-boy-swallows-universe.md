@@ -53,6 +53,6 @@ bookContent:
         A story of brotherhood, true love and the most unlikely of friendships,
         Boy Swallows Universe will be the most heartbreaking, joyous and
         exhilarating novel you will read all year.
-nextBook: Where the Crawdads Sing
+nextBook: Demon Copperhead
 ---
 
