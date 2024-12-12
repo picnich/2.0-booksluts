@@ -42,6 +42,6 @@ bookContent:
         the face of devastation. Back in print for the first time since 1997,
         Harpman’s modern classic is an important addition to the growing canon
         of feminist speculative literature.
-nextBook: Where the Crawdads Sing
+nextBook: The Heaven & Earth Grocery Store
 ---
 
