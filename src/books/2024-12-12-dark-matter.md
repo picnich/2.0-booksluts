@@ -43,6 +43,6 @@ bookContent:
         wondrous and horrifying than anything he could've imagined—one that will
         force him to confront the darkest parts of himself even as he battles a
         terrifying, seemingly unbeatable foe.
-nextBook: Where the Crawdads Sing
+nextBook: The Island of Sea Women
 ---
 
