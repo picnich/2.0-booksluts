@@ -7,7 +7,7 @@ bookslutsInfo:
   bookNumber: 47
   colourPrimary: '#046ca2'
   colourSecondary: '#5cb9da'
-  dateRead: 2024-12-12T23:33:37.802Z
+  dateRead: 2024-11-01T22:33:37.802Z
   dateReadAlt: Nov 2024
   rating: 4.8
   selectedBy: Rach W.
