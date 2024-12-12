@@ -47,6 +47,6 @@ bookContent:
         community. When the truth is revealed about the skeleton, the boy, and
         the part the town’s establishment played in both, McBride shows that it
         is love and community—heaven and earth—that ultimately sustain us.
-nextBook: Where the Crawdads Sing
+nextBook: The Memory Police
 ---
 
