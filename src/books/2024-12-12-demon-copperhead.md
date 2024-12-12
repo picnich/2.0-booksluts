@@ -51,6 +51,6 @@ bookContent:
         a good story. Demon Copperhead speaks for a new generation of lost boys,
         and all those born into beautiful, cursed places they can't imagine
         leaving behind.
-nextBook: Where the Crawdads Sing
+nextBook: I Who Have Never Known Men
 ---
 
